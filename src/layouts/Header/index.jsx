@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 import { FaPhone } from "react-icons/fa"
 import { AiOutlineMail } from "react-icons/ai"
-import { IoMdGlasses } from "react-icons/io"
 import { BsMusicNoteBeamed } from "react-icons/bs"
 import Gerb from "../../assets/png/gerb.png"
 import Flag from "../../assets/png/uz.png"
@@ -10,6 +9,7 @@ import Logo from "../../assets/png/logo.png"
 import { Link } from "react-router-dom"
 import Languages from '../../components/Language'
 import Tools from '../../components/Tools'
+// import Menu from '../Menu'
 
 const Header = () => {
     const [language, setLanguage] = useState(false)
@@ -43,8 +43,8 @@ const Header = () => {
                     <span>tstu_info@tdtu.u</span>
                 </div>
                 <div className='flex gap-2 items-center cursor-pointer'>
-                    <Tools/>
-         
+                    <Tools />
+
                 </div>
                 <div className='flex gap-2 items-center cursor-pointer'>
                     <img src={Gerb} alt="gerb" width="75%" />
@@ -56,7 +56,7 @@ const Header = () => {
                     <BsMusicNoteBeamed fontSize={24} />
                 </div>
             </div>
-            <div className='bg-primary_green md:px-[140px] px-[60px] py-[20px] flex justify-between items-center'>
+            <div className='bg-primary_green md:px-[140px] px-[60px] py-[20px] pb-[40px] flex justify-between items-center relative'>
                 <div className='flex gap-[20px] items-center cursor-pointer'>
                     <img src={Logo} alt="logo" className='w-[110px]' />
                     <h1 className='text-xl font-bold text-white'>Islom Karimov nomidagi Toshkent Davlat Texnika Universiteti</h1>
@@ -69,8 +69,9 @@ const Header = () => {
                     }
                     <Languages />
                 </div>
-            </div>
 
+            </div>
+            {/* <Menu /> */}
         </header>
     )
 }
