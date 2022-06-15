@@ -34,7 +34,7 @@ const Header = () => {
     return (
         <header>
 
-            <div className='bg-primary_green_darken md:px-[140px] px-[60px] text-white py-[12px] flex justify-end items-center gap-8'>
+            <div className='bg-primary_green_darken xl:px-[140px] md:px-[60px] sm:px-[30px] px-[15px] text-white py-[12px] flex justify-end items-center gap-8'>
                 <div className='flex gap-2 items-center'>
                     <FaPhone />
                     <span>+998 71 246-46-00</span>

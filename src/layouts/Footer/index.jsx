@@ -2,73 +2,77 @@ import React from 'react'
 import { Napa, PolitexTexture } from '../../assets/svg'
 import Logo from "../../assets/png/logo.png"
 import { Link } from 'react-router-dom'
+import { useTranslation } from "react-i18next"
 const Footer = () => {
+    const { t } = useTranslation()
     const links = [
         {
-            name: 'Unversitet',
+            name: t('university'),
             link: '/unversity'
         },
         {
-            name: 'Elektron Kutubxona',
+            name: t('electron_library'),
             link: '/unversity'
         },
         {
-            name: 'Tuzilma',
+            name: t('schema'),
             link: '/unversity'
         },
         {
-            name: 'Moliyaviy Faoliyat',
+            name: t('finansical_activity'),
             link: '/unversity'
         },
         {
-            name: 'Faoliyat',
+            name: t('activity'),
             link: '/unversity'
         },
         {
-            name: 'Grand Loyihalar',
+            name: t('grand_projects'),
             link: '/unversity'
         },
         {
-            name: 'Yangilklar',
+            name: t('news'),
             link: '/unversity'
         },
         {
-            name: 'Tayyorlov Kursi',
+            name: t('elective_course'),
             link: '/unversity'
         },
         {
-            name: 'Talabalar',
+            name: t('students'),
             link: '/unversity'
         },
         {
-            name: 'Ilmiy Jurnallar',
+            name: t('scientific_journal'),
             link: '/unversity'
         },
         {
-            name: 'Abituriyent',
+            name: t('abiturents'),
             link: '/unversity'
         },
         {
-            name: 'Korrupsiyasiz soha',
+            name: t('corruption_free_sector'),
             link: '/unversity'
         },
         {
-            name: 'Hemis',
+            name: t('hemis'),
             link: '/unversity'
         }
     ]
 
     return (
         <footer>
-            <div className='bg-primary_green md:px-[140px] px-[60px] text-white relative overflow-hidden'>
-                <h2 className='text-[35px] z-20 relative text-center font-bold text-white mt-[60px]'>Islom Karimov Nomidagi Toshkent Davlat Texnika Universiteti</h2>
-                <div className='grid grid-cols-3 my-[106px] justify-center gap-5 z-20 relative'>
-                    <div>
+            <div className='bg-primary_green xl:px-[140px] md:px-[60px] sm:px-[30px] px-[15px] text-white relative overflow-hidden'>
+                <h2 className='md:text-2xl z-20 relative text-center font-bold text-white mt-[60px]'>
+                    {t("university_name")}
+                </h2>
+                <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:my-[106px] my-[50px] justify-center gap-5 z-20 relative'>
+                    <div className='hidden md:block'>
                         <img src={Logo} alt="logo" />
                     </div>
-                    <div className='grid grid-cols-2'>
+                    <div className='grid grid-cols-2 gap-2 justify-center items-center'>
                         {
-                            links.map(link => <Link className='font-base text-white' key={link.name} to={link.link}>{link.name}</Link>)
+                            links.map(link => <Link className='font-base text-white sm:bg-transparent bg-primary_lightgray bg-opacity-50 sm:text-start text-center px-5 py-2 rounded' key={link.name} to={link.link}>{link.name}</Link>)
                         }
                     </div>
                     <div>
@@ -79,11 +83,11 @@ const Footer = () => {
                     <PolitexTexture />
                 </div>
             </div>
-            <div className='bg-primary_green_darken md:px-[140px] px-[60px] text-white py-[24px] flex justify-between items-center'>
+            <div className='bg-primary_green_darken xl:px-[140px] md:px-[60px] sm:px-[30px] px-[15px] text-white py-[12px] flex justify-between items-center'>
                 <span>
                     © TDTU 2022
                 </span>
-                <span>
+                <span className='text-sm'>
                     <Napa />
                 </span>
             </div>
