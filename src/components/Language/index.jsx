@@ -1,35 +1,36 @@
 import { TiArrowSortedDown } from "react-icons/ti"
 import { Dropdown, Space } from 'antd';
-import React, { useState } from 'react';
+import React from 'react';
 import uz from "../../assets/png/uz.png"
 import ru from "../../assets/png/ru.png"
 import en from "../../assets/png/us.png"
+import { useTranslation } from "react-i18next";
 
 const Languages = () => {
+    const { i18n } = useTranslation()
     const languages = [
         {
-            id: 1,
+            value: "uz",
             name: 'UZ',
             icon: uz
         },
         {
-            id: 2,
+            value: "ru",
             name: 'RU',
             icon: ru
         },
         {
-            id: 3,
+            value: "en",
             name: 'EN',
             icon: en
         }
     ]
-    const [language, setLanguage] = useState(languages[0])
 
     const menu = (
         <div className='bg-primary_lightgray bg-opacity-90 rounded overflow-hidden'>
             {
-                languages.filter(item => item.id !== language.id).map((item) => (
-                    <button onClick={() => setLanguage(item)} className="px-6 py-2 flex hover:bg-white gap-2 duration-300 cursor-pointer">
+                languages.filter(item => item.value !== i18n.language).map((item) => (
+                    <button key={item.value} onClick={() => i18n.changeLanguage(item.value)} className="px-6 py-2 flex hover:bg-white gap-2 duration-300 cursor-pointer">
                         <img width={20} src={item.icon} alt={item.name} />
                         <span>{item.name}</span>
                     </button>
@@ -37,6 +38,8 @@ const Languages = () => {
             }
         </div>
     )
+
+    const language = languages.find(item => item.value === i18n.language)
 
     return (
         <Dropdown overlay={menu} placement="bottomRight" trigger={['click']}>
@@ -49,4 +52,4 @@ const Languages = () => {
     )
 }
 
-export default Languages
+export default React.memo(Languages)
