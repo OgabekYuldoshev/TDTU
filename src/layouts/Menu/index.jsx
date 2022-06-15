@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import { AiOutlineSearch, AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 import { useClickOutside } from "react-haiku"
 import { RiArrowLeftSFill, RiArrowRightSFill } from "react-icons/ri"
-
+import LogoGreen from "../../assets/png/logoGreen.png"
 const menus = [
     {
         name: "Universitet",
@@ -344,67 +344,74 @@ const Menu = () => {
 
 
     return (
-        <div className='mx-[140px] transform -translate-y-5 relative'>
-            <div className='bg-white py-[15px] px-5 shadow rounded flex items-center justify-between'>
-                <div>
-                    <AiOutlineSearch fontSize={20} onClick={() => setSearch(current => !current)} />
-                </div>
-                {
-                    search ? (
-                        <div className='flex justify-between items-center gap-10 text-base '>
-                            <input type="text" className='border w-full' />
-                        </div>
-                    ) : (
-                        <div className='flex justify-between items-center gap-10 text-base'>
-                            {
-                                menus.map(menu => (
-                                    <button key={menu.name} onClick={() => handleShow(menu)} className='cursor-pointer'>{menu.name}</button>
-                                ))
-                            }
-                        </div>
-                    )
-                }
-
-                <div>
+        <div className='w-full  absolute top-full left-0 transform -translate-y-5 '>
+            <div className='mx-[140px] relative'>
+                <div className='bg-white py-[15px] px-5 shadow rounded flex items-center justify-between'>
+                    <div>
+                        <AiOutlineSearch fontSize={20} onClick={() => setSearch(current => !current)} />
+                    </div>
                     {
-                        search ? <AiOutlineClose fontSize={20} onClick={() => setSearch(false)} /> : <AiOutlineMenu fontSize={20} />
+                        search ? (
+                            <div className='flex justify-between items-center gap-10 text-base '>
+                                <input type="text" className='border w-full' />
+                            </div>
+                        ) : (
+                            <div className='flex justify-between items-center gap-10 text-base'>
+                                {
+                                    menus.map(menu => (
+                                        <button key={menu.name} onClick={() => handleShow(menu)} className='cursor-pointer'>{menu.name}</button>
+                                    ))
+                                }
+                            </div>
+                        )
                     }
-                </div>
-            </div>
 
-            <div ref={ref} className={`overflow-hidden bg-white shadow absolute w-full mt-1 shadow rounded duration-300 z-50 px-3 px-[70px] py-[25px]`}>
-                <div className='grid grid-cols-3 gap-5'>
                     <div>
-                        <h2 className='text-xl font-bold'>{selected?.name}</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, autem tempore. Ducimus veritatis vero dolorum earum sit quis velit</p>
-                    </div>
-                    <div>
-                        <ul className='flex flex-col gap-2'>
-                            {
-                                selected?.children?.map(item => (
-                                    <li key={item} onClick={() => setSelect2(item)} className={`${selected2?.name === item.name && "bg-primary_green rounded text-white"} border-b hover:bg-primary_green hover:rounded border-primary_green px-4 py-2 duration-300 hover:text-white flex justify-between items-center`}>
-                                        <span>{item?.name}</span>
-                                        {!!item.children && (selected2?.name === item.name ? <RiArrowLeftSFill /> : <RiArrowRightSFill />)}
-                                    </li>
-                                ))
-                            }
-                        </ul>
-                    </div>
-                    <div className='relative'>
-                        <ul className='flex flex-col gap-2'>
-                            {
-                                selected2?.children?.map(item => (
-                                    <li key={item} onClick={() => setSelect2(item)} className='border-b hover:bg-primary_green hover:rounded border-primary_green px-4 py-2 duration-300 hover:text-white flex justify-between items-center'>
-                                        <span>{item?.name}</span>
-                                        {!!item.children && <RiArrowLeftSFill />}
-                                    </li>
-                                ))
-                            }
-                        </ul>
+                        {
+                            search ? <AiOutlineClose fontSize={20} onClick={() => setSearch(false)} /> : <AiOutlineMenu fontSize={20} />
+                        }
                     </div>
                 </div>
-            </div>
 
+                <div className={`${selected ? 'visible' : 'invisible'} overflow-hidden bg-white top-full left-0  shadow absolute w-full mt-1 shadow rounded duration-300 z-50 `}>
+                    <div ref={ref} className={`px-3 px-[70px] py-[25px]`}>
+                        <div className='grid grid-cols-3 gap-5 block relative'>
+                            <div>
+                                <h2 className='text-xl font-bold'>{selected?.name}</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, autem tempore. Ducimus veritatis vero dolorum earum sit quis velit</p>
+                            </div>
+                            <div>
+                                <ul className='flex flex-col gap-2'>
+                                    {
+                                        selected?.children?.map(item => (
+                                            <li key={item} onClick={() => setSelect2(item)} className={`${selected2?.name === item.name && "bg-primary_green rounded text-white"} border-b hover:bg-primary_green hover:rounded border-primary_green px-4 py-2 duration-300 hover:text-white flex justify-between items-center`}>
+                                                <span>{item?.name}</span>
+                                                {!!item.children && (selected2?.name === item.name ? <RiArrowLeftSFill /> : <RiArrowRightSFill />)}
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            </div>
+                            <div className='relative z-50'>
+                                <ul className='flex flex-col gap-2'>
+                                    {
+                                        selected2?.children?.map(item => (
+                                            <li key={item} onClick={() => setSelect2(item)} className='border-b hover:bg-primary_green hover:rounded border-primary_green px-4 py-2 duration-300 hover:text-white flex justify-between items-center'>
+                                                <span>{item?.name}</span>
+                                                {!!item.children && <RiArrowLeftSFill />}
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            </div>
+
+                            <img className='absolute right-0 w-48 opacity-10 select-none z-10' src={LogoGreen} alt="logo" />
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     )
 }

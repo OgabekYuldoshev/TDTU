@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header />
-            <main className='mx-[140px] m-auto'>
+            <main className='bg-primary_lightgray m-auto'>
                 {children}
             </main>
             <Footer />

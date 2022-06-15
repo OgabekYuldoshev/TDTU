@@ -9,7 +9,7 @@ import Logo from "../../assets/png/logo.png"
 import { Link } from "react-router-dom"
 import Languages from '../../components/Language'
 import Tools from '../../components/Tools'
-// import Menu from '../Menu'
+import Menu from '../Menu'
 
 const Header = () => {
     const [language, setLanguage] = useState(false)
@@ -33,6 +33,7 @@ const Header = () => {
     ]
     return (
         <header>
+
             <div className='bg-primary_green_darken md:px-[140px] px-[60px] text-white py-[12px] flex justify-end items-center gap-8'>
                 <div className='flex gap-2 items-center'>
                     <FaPhone />
@@ -69,9 +70,10 @@ const Header = () => {
                     }
                     <Languages />
                 </div>
-
+                {/* <Menu /> */}
             </div>
-            {/* <Menu /> */}
+
+
         </header>
     )
 }
