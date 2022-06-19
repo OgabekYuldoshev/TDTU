@@ -1,15 +1,16 @@
 import React from 'react'
 import data from "./utils/fakedata"
 import {Card} from "antd"
-import "./assets/scss/main.scss"
-import img from "./assets/img_1.png"
+import "./scss/main.scss"
+import img from "../../assets/png/news-card-img-fake.png"
 import logo from "../../assets/png/logo-color.png"
+import ButtonCom from "../ButtonCom";
 
 export default function ComponentCard() {
     return (
-        <div className={"news mt-[90px] mb-[90px]"}>
+        <div className={"news mt-[30px] mb-[30px]"}>
             <div className="news__box__card transition-all rounded-3xl flex
-            justify-self-auto flex-wrap cursor-pointer gap=[40px] w-1/4 h-[600px] relative overflow-hidden box-border">
+            justify-self-auto flex-wrap cursor-pointer gap-[40px] w-1/4 h-[600px] relative overflow-hidden box-border">
                 <img className='news__box__card__img absolute w-full h-3/6' src={img} alt=""/>
                 <div className='news__box__card__logo flex absolute w-7/12 top-56 left-8 items-center z-10 gap-1'>
                     <img src={logo} alt="logo-university" className={"w-16"}/>
@@ -26,11 +27,7 @@ export default function ComponentCard() {
 
                     <div className='news__box__card__texts__bottom flex justify-between items-center absolute top-[255px]'>
                         <p className={"text-lg tracking-wide font-light"}>14:35  12.03.2022</p>
-                        <button className="text-center hidden border-transparent
-                         relative bg-transparent   w-[80px] text-lg font-normal left-0.5 bottom-1">
-                            <div id={"p"} className={"text-white absolute z-[3]"}>Batafsil</div>
-                            <div id={"div"} className="h-[2px] px-[25px] w-full bottom-0 left-0"/>
-                        </button>
+                        <ButtonCom text={"Batafsil"} textColor={"text-white"}/>
                     </div>
                 </div>
             </div>

@@ -44,7 +44,6 @@ const Header = () => {
                 </div>
                 <div className='flex gap-2 items-center cursor-pointer'>
                     <Tools/>
-         
                 </div>
                 <div className='flex gap-2 items-center cursor-pointer'>
                     <img src={Gerb} alt="gerb" width="75%" />
@@ -70,7 +69,6 @@ const Header = () => {
                     <Languages />
                 </div>
             </div>
-
         </header>
     )
 }

@@ -6,55 +6,55 @@ const Footer = () => {
     const links = [
         {
             name: 'Unversitet',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Elektron Kutubxona',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Tuzilma',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Moliyaviy Faoliyat',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Faoliyat',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Grand Loyihalar',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Yangilklar',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Tayyorlov Kursi',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Talabalar',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Ilmiy Jurnallar',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Abituriyent',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Korrupsiyasiz soha',
-            link: '/unversity'
+            link: '/university'
         },
         {
             name: 'Hemis',
-            link: '/unversity'
+            link: '/university'
         }
     ]
 

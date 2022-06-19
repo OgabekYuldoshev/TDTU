@@ -14,6 +14,9 @@ module.exports = {
         primary_gray: '#737277'
       },
     },
+    container: {
+      center: true,
+    },
   },
   plugins: [],
 }
