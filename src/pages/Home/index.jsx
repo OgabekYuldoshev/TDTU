@@ -1,12 +1,11 @@
 import React from 'react'
-import MainSwiper from '../../components/MainSwiper'
-import CardStudent from '../../components/ServiceCard'
+import Service from "../../components/Interactive-service/ServiceAnim";
+import Rectorate from "../../components/Rectorat";
 
 const Home = () => {
     return (
-        <div className=' h-screen'>
-            <MainSwiper/>
-        
+        <div className='h-screen'>
+            <Rectorate/>
         </div>
     )
 }

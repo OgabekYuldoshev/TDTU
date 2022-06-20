@@ -1,6 +1,4 @@
 import React from 'react'
-import data from "./utils/fakedata"
-import {Card} from "antd"
 import "./scss/main.scss"
 import img from "../../assets/png/news-card-img-fake.png"
 import logo from "../../assets/png/logo-color.png"
