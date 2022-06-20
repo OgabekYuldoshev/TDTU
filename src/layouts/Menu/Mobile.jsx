@@ -42,6 +42,11 @@ const Tab = () => {
                                 className='text-black grid-cols-1 grid gap-5 mt-5 relative z-20'>
                                 <div className='flex flex-col gap-2'>
                                     <Search onClick={(e) => alert(e)} />
+                                    <div className='grid grid-cols-2 gap-3 my-5'>
+                                        {
+                                            paths.map(item => <Link key={item.title } className='py-2 px-4 text-white font-semibold bg-primary_green text-center rounded' to={item.path}>{t(item.title)}</Link>)
+                                        }
+                                    </div>
                                     {
                                         menus.map(menu => !!menu.children ? (
                                             <List key={menu?.title}>

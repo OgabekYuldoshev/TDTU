@@ -1,5 +1,5 @@
 import React from 'react'
-import { AlignRightOutlined, CaretDownOutlined, SearchOutlined, CaretRightOutlined } from "@ant-design/icons"
+import { AlignRightOutlined, CaretDownOutlined, SearchOutlined, CaretRightOutlined, CloseCircleOutlined, CloseOutlined } from "@ant-design/icons"
 import LogoGreen from "../../assets/png/logoGreen.png"
 import { useState } from 'react'
 import { useOnClickOutside } from "use-hooks"
@@ -11,11 +11,13 @@ import { useNavigate } from 'react-router'
 import { Item, List } from '../../components/Collapse'
 
 
-const Menu = () => {
+const Menu = ({ onOpen = () => null }) => {
     const ref = useRef(null)
     const { t } = useTranslation()
     const navigate = useNavigate()
     const [selectedMenu, setSelectMenu] = useState()
+    const [search, setSearch] = useState(false)
+
     const [selectedChildMenu, setSelectMenuChild] = useState()
 
     const handleClear = () => {
@@ -25,27 +27,38 @@ const Menu = () => {
     useOnClickOutside(ref, handleClear);
     const parentMenu = menus?.find(menu => menu.id === selectedMenu)
     const childMenu = parentMenu?.children?.find(menu => menu.id === selectedChildMenu)
-    console.log(childMenu)
 
     return (
         <div className='relative'>
             <div className='bg-white absolute -bottom-8 w-full text-black py-4 shadow px-4 rounded'>
                 <div className='flex items-center justify-between gap-5 divide-x'>
-                    <SearchOutlined className='text-lg cursor-pointer' />
-                    <ul className='flex justify-between items-center w-full mb-0 pl-4 font-medium '>
-                        {
-                            menus?.map(menu => !!menu.children ? (
-                                <li key={menu?.title} onClick={() => setSelectMenu(menu.id)} className='cursor-pointer hover:text-primary_green'>
-                                    {t(menu?.title)}
-                                </li>
-                            ) : (
-                                <li key={menu?.title} onClick={() => navigate(menu?.path)} className='cursor-pointer hover:text-primary_green'>
-                                    {t(menu?.title)}
-                                </li>
-                            ))
-                        }
-                    </ul>
-                    <AlignRightOutlined className='text-lg pl-4 cursor pointer hover:text-primary_green' />
+                    <SearchOutlined className='text-lg cursor-pointer' onClick={() => setSearch(current => !current)} />
+                    {
+                        search ? (
+                            <form onSubmit={() => alert('searching...')} className='w-full px-4'>
+                                <input name='search' type="text" placeholder={t('search')} className="w-full px-4 font-medium border-b focus:outline-none" />
+                            </form>
+                        ) : (
+                            <ul className='flex justify-between items-center w-full mb-0 pl-4 font-medium '>
+                                {
+                                    menus?.map(menu => !!menu.children ? (
+                                        <li key={menu?.title} onClick={() => setSelectMenu(menu.id)} className='cursor-pointer hover:text-primary_green'>
+                                            {t(menu?.title)}
+                                        </li>
+                                    ) : (
+                                        <li key={menu?.title} onClick={() => navigate(menu?.path)} className='cursor-pointer hover:text-primary_green'>
+                                            {t(menu?.title)}
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        )
+                    }
+                    {
+                        search ?
+                            <CloseOutlined onClick={() => setSearch(false)} className='text-lg pl-4 cursor pointer hover:text-primary_green' />
+                            : <AlignRightOutlined onClick={onOpen} className='text-lg pl-4 cursor pointer hover:text-primary_green' />
+                    }
                 </div>
             </div>
             {
@@ -119,7 +132,7 @@ const Menu = () => {
                 )
             }
 
-        </div>
+        </div >
     )
 }
 
