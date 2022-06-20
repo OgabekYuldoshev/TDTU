@@ -1,15 +1,17 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import TopHead from "../components/TopHead"
 
 const Layout = ({ children }) => {
     return (
         <>
-            {/*<Header />*/}
-            <main className='container mx-auto'>
+            <TopHead />
+            <Header />
+            <main className='bg-primary_lightgray m-auto'>
                 {children}
             </main>
-            {/*<Footer />*/}
+            <Footer />
         </>
 
     )

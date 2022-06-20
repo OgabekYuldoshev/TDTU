@@ -1,202 +1,243 @@
 const menus = [
     {
-        name: "Universitet",
+        id: 1,
+        title: "Universitet",
         children: [
             {
-                name: 'Rektor Tabrigi',
-                link: '/'
+                id: 1,
+                title: 'Rektor Tabrigi',
+                path: '/'
             },
             {
-                name: 'Rekvizitlar',
-                link: '/'
+                id: 2,
+                title: 'Rekvizitlar',
+                path: '/'
             },
             {
-                name: 'Universitet nizomi',
-                link: '/'
+                id: 3,
+                title: 'Universitet nizomi',
+                path: '/'
             },
             {
-                name: 'Rektor virtual qabulxonasi',
-                link: '/'
+                id: 4,
+                title: 'Rektor virtual qabulxonasi',
+                path: '/'
             },
             {
-                name: 'Me’yoriy xujjatlar',
-                link: '/'
+                id: 5,
+                title: 'Me’yoriy xujjatlar',
+                path: '/'
             },
             {
-                name: 'UNIVERSITET TARIXI',
-                link: '/'
+                id: 6,
+                title: 'UNIVERSITET TARIXI',
+                path: '/'
             }
         ]
     },
     {
-        name: "Tuzilma",
+        id: 2,
+        title: "Tuzilma",
         children: [
             {
-                name: 'Rektorat',
-                link: '/'
+                id: 1,
+                title: 'Rektorat',
+                path: '/'
             },
             {
-                name: 'Markazlar',
+                id: 2,
+                title: 'Markazlar',
                 children: [
                     {
-                        name: 'Axborot resurs markazi',
-                        link: '/'
+                        id: 1,
+                        title: 'Axborot resurs markazi',
+                        path: '/'
                     },
                     {
-                        name: 'Raqamki ta’lim texnologiayalari markazi',
-                        link: '/'
+                        id: 2,
+                        title: 'Raqamki ta’lim texnologiayalari markazi',
+                        path: '/'
                     },
                     {
-                        name: 'Kadrlar malakasini oshirish va qayta tayyorlash o’quv markazi',
-                        link: '/'
+                        id: 3,
+                        title: 'Kadrlar malakasini oshirish va qayta tayyorlash o’quv markazi',
+                        path: '/'
                     },
                     {
-                        name: 'O’zbek-Yapon yoshlar innovatsiya markazi',
-                        link: '/'
+                        id: 4,
+                        title: 'O’zbek-Yapon yoshlar innovatsiya markazi',
+                        path: '/'
                     },
                     {
-                        name: 'Sanoat energiya auditi amaliy-o’quv markazi',
-                        link: '/'
+                        id: 5,
+                        title: 'Sanoat energiya auditi amaliy-o’quv markazi',
+                        path: '/'
                     }
                 ]
             },
             {
-                name: 'Bo’limlar',
+                id: 3,
+                title: 'Bo’limlar',
                 children: [
                     {
-                        name: 'Magistratura tizimi',
-                        link: '/'
+                        id: 1,
+                        title: 'Magistratura tizimi',
+                        path: '/'
                     },
                     {
-                        name: 'Magistratura tizimi',
-                        link: '/'
+                        id: 3,
+                        title: 'Ilmiy tadqiqotlar, innovatsiyalar va ilmiy-pedagogik kadrlar tayyorlash bo’limi',
+                        path: '/'
                     },
                     {
-                        name: 'Ilmiy tadqiqotlar, innovatsiyalar va ilmiy-pedagogik kadrlar tayyorlash bo’limi',
-                        link: '/'
+                        id: 4,
+                        title: 'O’quv uslubiy boshqarma',
+                        path: '/'
                     },
                     {
-                        name: 'O’quv uslubiy boshqarma',
-                        link: '/'
+                        id: 5,
+                        title: 'Ichki nazorat va monitoring bo’limi',
+                        path: '/'
                     },
                     {
-                        name: 'Ichki nazorat va monitoring bo’limi',
-                        link: '/'
+                        id: 6,
+                        title: 'Ilmiy bo’lim',
+                        path: '/'
                     },
                     {
-                        name: 'Ilmiy bo’lim',
-                        link: '/'
+                        id: 7,
+                        title: 'Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi',
+                        path: '/'
                     },
                     {
-                        name: 'Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi',
-                        link: '/'
+                        id: 8,
+                        title: 'Xodimlar bo’limi',
+                        path: '/'
                     },
                     {
-                        name: 'Xodimlar bo’limi',
-                        link: '/'
+                        id: 9,
+                        title: 'Yoshlar ittifoqi bo’limi',
+                        path: '/'
                     },
                     {
-                        name: 'Yoshlar ittifoqi bo’limi',
-                        link: '/'
+                        id: 10,
+                        title: 'Buxgalteriya bo’limi',
+                        path: '/'
                     },
                     {
-                        name: 'Buxgalteriya bo’limi',
-                        link: '/'
+                        id: 11,
+                        title: 'Buyurtmalar portfelini shakllantirish, bitiruvchilarni ishga taqsimlashva monitoring bo’limi',
+                        path: '/'
                     },
                     {
-                        name: 'Buyurtmalar portfelini shakllantirish, bitiruvchilarni ishga taqsimlashva monitoring bo’limi',
-                        link: '/'
-                    },
-                    {
-                        name: 'Sanoat iqtisodiyoti bo’limi',
-                        link: '/'
+                        id: 12,
+                        title: 'Sanoat iqtisodiyoti bo’limi',
+                        path: '/'
                     }
                 ]
             },
             {
-                name: 'Fakultetlar',
-                link: '/'
+                id: 4,
+                title: 'Fakultetlar',
+                path: '/'
             },
             {
-                name: 'Kafedralar',
-                link: '/'
+                id: 5,
+                title: 'Kafedralar',
+                path: '/'
             },
             {
-                name: 'Filiallar',
+                id: 6,
+                title: 'Filiallar',
                 children: [
                     {
-                        name: 'Islom Karimov nomidagi Toshkent davlat texnika universiteti Olmaliq filiali',
-                        link: '/'
+                        id: 1,
+                        title: 'Islom Karimov nomidagi Toshkent davlat texnika universiteti Olmaliq filiali',
+                        path: '/'
                     },
                     {
-                        name: 'Islom Karimov nomidagi Toshkent davlat texnika universiteti qoqon filiali',
-                        link: '/'
+                        id: 2,
+                        title: 'Islom Karimov nomidagi Toshkent davlat texnika universiteti qoqon filiali',
+                        path: '/'
                     },
                     {
-                        name: 'Islom Karimov nomidagi Toshkent davlat texnika universiteti termiz filiali',
-                        link: '/'
+                        id: 3,
+                        title: 'Islom Karimov nomidagi Toshkent davlat texnika universiteti termiz filiali',
+                        path: '/'
                     }
                 ]
             },
             {
-                name: 'TDTU tuzilmasi',
-                link: '/'
+                id: 7,
+                title: 'TDTU tuzilmasi',
+                path: '/'
             }
         ]
     },
     {
-        name: "Faoliyat",
+        id: 3,
+        title: "Faoliyat",
         children: [
             {
-                name: 'Fan va innovatsiya',
+                id: 1,
+                title: 'Fan va innovatsiya',
                 children: [
                     {
-                        name: 'Fan',
-                        link: '/'
+                        title: 'Fan',
+                        path: '/'
                     },
                     {
-                        name: 'innovatsiya',
-                        link: '/'
+                        title: 'innovatsiya',
+                        path: '/'
                     },
                     {
-                        name: 'doktorantura',
-                        link: '/'
+                        title: 'doktorantura',
+                        path: '/'
                     }
                 ]
             },
             {
-                name: 'Yoshlar bilan ishlash',
-                link: '/'
+                id: 2,
+                title: 'Yoshlar bilan ishlash',
+                path: '/'
             },
             {
-                name: 'Madaniy-Ma’rifiy',
-                link: '/'
+                id: 3,
+                title: 'Madaniy-Ma’rifiy',
+                path: '/'
             },
             {
-                name: 'Xalqaro aloqalar',
+                id: 4,
+                title: 'Xalqaro aloqalar',
                 children: [
                     {
-                        name: 'xalqaro hamkorlik bo’limi',
-                        link: '/'
+                        id: 1,
+                        title: 'xalqaro hamkorlik bo’limi',
+                        path: '/'
                     },
                     {
-                        name: 'creative spark',
-                        link: '/'
+                        id: 2,
+                        title: 'creative spark',
+                        path: '/'
                     },
                     {
-                        name: 'erasmus',
+                        id: 3,
+                        title: 'erasmus',
                         children: [
                             {
-                                name: 'Mechauz',
-                                link: '/'
+                                id: 1,
+                                title: 'Mechauz',
+                                path: '/'
                             },
                             {
-                                name: 'space.com',
-                                link: '/'
+                                id: 2,
+                                title: 'space.com',
+                                path: '/'
                             },
                             {
-                                name: 'ka107',
-                                link: '/'
+                                id: 3,
+                                title: 'ka107',
+                                path: '/'
                             }
                         ]
                     }
@@ -205,140 +246,169 @@ const menus = [
         ]
     },
     {
-        name: "Talabalar",
+        id: 4,
+        title: "Talabalar",
         children: [
             {
-                name: 'Bakalavriat',
-                link: '/'
+                id: 1,
+                title: 'Bakalavriat',
+                path: '/'
             },
             {
-                name: 'Magistratura',
-                link: '/'
+                id: 2,
+                title: 'Magistratura',
+                path: '/'
             },
             {
-                name: 'Kechki ta’lim',
-                link: '/'
+                id: 3,
+                title: 'Kechki ta’lim',
+                path: '/'
             },
             {
-                name: 'Sirtqi ta’lim',
-                link: '/'
+                id: 4,
+                title: 'Sirtqi ta’lim',
+                path: '/'
             },
             {
-                name: 'Bitiruvchilar klubi',
-                link: '/'
+                id: 5,
+                title: 'Bitiruvchilar klubi',
+                path: '/'
             }
         ]
     },
     {
-        name: "Ilmiy Faoliyat",
+        id: 5,
+        title: "Ilmiy Faoliyat",
         children: [
             {
-                name: 'Texnika yulduzlari',
-                link: '/'
+                id: 1,
+                title: 'Texnika yulduzlari',
+                path: '/'
             },
             {
-                name: 'Yosh texnika yulduzlari',
-                link: '/'
+                id: 2,
+                title: 'Yosh texnika yulduzlari',
+                path: '/'
             },
             {
-                name: 'Ta’lim tizimida ijtimoiy gumanitar fanlar',
-                link: '/'
+                id: 3,
+                title: 'Ta’lim tizimida ijtimoiy gumanitar fanlar',
+                path: '/'
             },
             {
-                name: 'Mahorat darskari',
-                link: '/'
+                id: 4,
+                title: 'Mahorat darskari',
+                path: '/'
             }
         ]
     },
     {
-        name: "Abituriyent",
+        id: 6,
+        title: "Abituriyent",
         children: [
             {
-                name: 'Bakalavriat',
-                link: '/'
+                id: 1,
+                title: 'Bakalavriat',
+                path: '/'
             },
             {
-                name: 'Magistratura',
-                link: '/'
+                id: 2,
+                title: 'Magistratura',
+                path: '/'
             },
             {
-                name: 'Sirtqi va kechki ta’lim shakillari',
-                link: '/'
+                id: 3,
+                title: 'Sirtqi va kechki ta’lim shakillari',
+                path: '/'
             },
             {
-                name: 'Qo’shma ta’lim dasturlari',
-                link: '/'
+                id: 4,
+                title: 'Qo’shma ta’lim dasturlari',
+                path: '/'
             },
             {
-                name: 'Xorijiy Fuqarolar',
-                link: '/'
+                id: 5,
+                title: 'Xorijiy Fuqarolar',
+                path: '/'
             }
         ]
     },
     {
-        name: "Korrupsiyasiz soha",
+        id: 7,
+        title: "Korrupsiyasiz soha",
         children: [
             {
-                name: 'TDTU DAVLAT XARID OIDLARIGA TUZILGAN SHARTNOMALAR',
-                link: '/'
+                id: 1,
+                title: 'TDTU DAVLAT XARID OIDLARIGA TUZILGAN SHARTNOMALAR',
+                path: '/'
             },
             {
-                name: 'ISH HAQINI HISOBLASH VA MUKOFOTLARNI TAQSIMLASH QOIDALARI',
-                link: '/'
+                id: 2,
+                title: 'ISH HAQINI HISOBLASH VA MUKOFOTLARNI TAQSIMLASH QOIDALARI',
+                path: '/'
             },
             {
-                name: 'MUASSASA BYUDJETI',
-                link: '/'
+                id: 3,
+                title: 'MUASSASA BYUDJETI',
+                path: '/'
             },
             {
-                name: 'FAN DASTURLARI',
-                link: '/'
+                id: 4,
+                title: 'FAN DASTURLARI',
+                path: '/'
             },
             {
-                name: 'NAMUNAVIY ORALIQ VA YAKUNIY NAZORAT SAVOLLARINI SEMESTR BOSHLANGANDAN SO’NG BIR OY ICHIDA WEB-SAYTGA JOYLASHTIRISH',
-                link: '/'
+                id: 5,
+                title: 'NAMUNAVIY ORALIQ VA YAKUNIY NAZORAT SAVOLLARINI SEMESTR BOSHLANGANDAN SO’NG BIR OY ICHIDA WEB-SAYTGA JOYLASHTIRISH',
+                path: '/'
             },
             {
-                name: 'XODIMLARNING AKADEMIK PROFILI',
-                link: '/'
+                id: 6,
+                title: 'XODIMLARNING AKADEMIK PROFILI',
+                path: '/'
             },
             {
-                name: 'TA’LIM YO’NALISHLARI VA MUTAXASSISLIKLARNING MALAKA TALABLARI',
-                link: '/'
+                id: 7,
+                title: 'TA’LIM YO’NALISHLARI VA MUTAXASSISLIKLARNING MALAKA TALABLARI',
+                path: '/'
             },
             {
-                name: 'PROFESSOR-O’QITUVCHILARGA QO’YILGAN TALABLAR',
-                link: '/'
+                id: 8,
+                title: 'PROFESSOR-O’QITUVCHILARGA QO’YILGAN TALABLAR',
+                path: '/'
             },
             {
-                name: 'KORRUPSIYAGA OID HOLATLAR BO’YICHA TALABLAR VA O’QITUVCHILARNING TO’G’RIDAN TO’G’RIMUASSASI RAHBARIYATIGA ANONIMHAMDA JAMOAVIY MUROJAAT QILISH IMKONIATINI',
-                link: '/'
+                id: 9,
+                title: 'KORRUPSIYAGA OID HOLATLAR BO’YICHA TALABLAR VA O’QITUVCHILARNING TO’G’RIDAN TO’G’RIMUASSASI RAHBARIYATIGA ANONIMHAMDA JAMOAVIY MUROJAAT QILISH IMKONIATINI',
+                path: '/'
             }
         ]
     },
     {
-        name: "Yangiliklar"
+        id: 8,
+        title: "Yangiliklar",
+        path: '/news'
     },
 ]
 
 
-const links = [
+const paths = [
     {
-        name: "Moliyaviy Faoliyat",
-        link: ''
+        title: "Moliyaviy Faoliyat",
+        path: '/'
     },
     {
-        name: "Elektron Kutubhona",
-        link: ''
+        title: "Elektron Kutubhona",
+        path: '/'
     },
     {
-        name: "Tayyorlov kursi",
-        link: ''
+        title: "Tayyorlov kursi",
+        path: '/'
     },
     {
-        name: "Hemis",
-        link: ''
+        title: "Hemis",
+        path: '/'
     }
 ]
 
-export { menus, links }
+export { menus, paths }
