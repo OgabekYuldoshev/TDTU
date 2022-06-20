@@ -14,7 +14,7 @@ const Header = () => {
         <header className='bg-primary_green text-white'>
             <div className='md:block hidden relative xl:px-[140px] md:px-[60px]'>
                 <DesktopMenu menu={siteMap} onClose={() => setSiteMap(false)} />
-                <Menu onOpen={() => setSiteMap(true)} />
+                {!siteMap && <Menu onOpen={() => setSiteMap(true)} />}
             </div>
             {
                 !tab && mobile && (
