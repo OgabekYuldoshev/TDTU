@@ -64,12 +64,7 @@ export default function Rectorate() {
                             <br/>
                         </div>
                     </div>
-                    {
-                        onMouse ?
-                            <img style={{height: "11.5vw"}} src={logo} alt="logo"/>
-                            :
-                            <img style={{height: "11.5vw"}} src={logo1} alt="logo"/>
-                    }
+                    <img style={{height: "11.5vw"}} src={onMouse ? logo : logo1} alt="logo"/>
                 </div>
             </div>
         </div>
