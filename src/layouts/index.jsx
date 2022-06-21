@@ -6,12 +6,12 @@ import TopHead from "../components/TopHead"
 const Layout = ({ children }) => {
     return (
         <>
-            {/*<TopHead />*/}
-            {/*<Header />*/}
+            <TopHead />
+            <Header />
             <main className='bg-primary_lightgray m-auto'>
                 {children}
             </main>
-            {/*<Footer />*/}
+            <Footer />
         </>
 
     )
