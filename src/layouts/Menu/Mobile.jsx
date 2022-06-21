@@ -28,7 +28,8 @@ const Tab = () => {
                     <img className="w-16" src={!open ? Logo : LogoGreen} alt="logo" />
                     <h1 className={`${open ? 'text-primary_green' : 'text-white'} max-w-sm`}>{t('university_name')}</h1>
                 </Link>
-                {open ? <CloseOutlined onClick={() => setOpen(false)} className="text-black text-xl" /> : <AlignRightOutlined onClick={() => setOpen(true)} className="text-xl" />}
+                {open ? <CloseOutlined onClick={() => setOpen(false)} className="text-black text-xl" /> :
+                    <AlignRightOutlined onClick={() => setOpen(true)} className="text-xl" />}
             </div>
             <div className='relative overflow-hidden'>
                 {
