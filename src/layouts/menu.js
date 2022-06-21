@@ -1,149 +1,149 @@
 const menus = [
     {
         id: 1,
-        title: "Universitet",
+        title: "university",
         children: [
             {
                 id: 1,
-                title: 'Rektor Tabrigi',
-                path: '/'
+                title: 'rector_congratulations',
+                path: '/rector_congratulations'
             },
             {
                 id: 2,
-                title: 'Rekvizitlar',
-                path: '/'
+                title: 'requisites',
+                path: '/requisites'
             },
             {
                 id: 3,
-                title: 'Universitet nizomi',
-                path: '/'
+                title: 'university_regulations',
+                path: '/university_regulations'
             },
             {
                 id: 4,
-                title: 'Rektor virtual qabulxonasi',
-                path: '/'
+                title: 'virtual_reception',
+                path: '/virtual_reception'
             },
             {
                 id: 5,
-                title: 'Me’yoriy xujjatlar',
-                path: '/'
+                title: 'regulatory_documents',
+                path: '/regulatory_documents'
             },
             {
                 id: 6,
-                title: 'UNIVERSITET TARIXI',
-                path: '/'
+                title: 'history_of_university',
+                path: '/history_of_university'
             }
         ]
     },
     {
         id: 2,
-        title: "Tuzilma",
+        title: "structure",
         children: [
             {
                 id: 1,
-                title: 'Rektorat',
-                path: '/'
+                title: 'rektorat',
+                path: '/rektorat'
             },
             {
                 id: 2,
-                title: 'Markazlar',
+                title: 'centers',
                 children: [
                     {
                         id: 1,
-                        title: 'Axborot resurs markazi',
-                        path: '/'
+                        title: 'information_center',
+                        path: '/information_center'
                     },
                     {
                         id: 2,
-                        title: 'Raqamki ta’lim texnologiayalari markazi',
-                        path: '/'
+                        title: 'digital_learning_technologies_center',
+                        path: '/digital_learning_technologies_center'
                     },
                     {
                         id: 3,
-                        title: 'Kadrlar malakasini oshirish va qayta tayyorlash o’quv markazi',
-                        path: '/'
+                        title: 'personal_training_center',
+                        path: '/personal_training_center'
                     },
                     {
                         id: 4,
-                        title: 'O’zbek-Yapon yoshlar innovatsiya markazi',
-                        path: '/'
+                        title: 'japan_innovation_center',
+                        path: '/japan_innovation_center'
                     },
                     {
                         id: 5,
-                        title: 'Sanoat energiya auditi amaliy-o’quv markazi',
-                        path: '/'
+                        title: 'industrial_training_center',
+                        path: '/industrial_training_center'
                     }
                 ]
             },
             {
                 id: 3,
-                title: 'Bo’limlar',
+                title: 'sections',
                 children: [
                     {
                         id: 1,
-                        title: 'Magistratura tizimi',
-                        path: '/'
+                        title: 'master_system_section',
+                        path: '/master_system'
                     },
                     {
                         id: 3,
-                        title: 'Ilmiy tadqiqotlar, innovatsiyalar va ilmiy-pedagogik kadrlar tayyorlash bo’limi',
-                        path: '/'
+                        title: 'researching_system_section',
+                        path: '/researching_system_section'
                     },
                     {
                         id: 4,
-                        title: 'O’quv uslubiy boshqarma',
-                        path: '/'
+                        title: 'teaching_methodology_section',
+                        path: '/teaching_methodology_section'
                     },
                     {
                         id: 5,
-                        title: 'Ichki nazorat va monitoring bo’limi',
-                        path: '/'
+                        title: 'inside_monitoring_section',
+                        path: '/inside_monitoring_section'
                     },
                     {
                         id: 6,
-                        title: 'Ilmiy bo’lim',
-                        path: '/'
+                        title: 'science_section',
+                        path: '/science_section'
                     },
                     {
                         id: 7,
-                        title: 'Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi',
-                        path: '/'
+                        title: 'gifted_students_section',
+                        path: '/gifted_students_section'
                     },
                     {
                         id: 8,
-                        title: 'Xodimlar bo’limi',
-                        path: '/'
+                        title: 'human_resources_section',
+                        path: '/human_resources_section'
                     },
                     {
                         id: 9,
-                        title: 'Yoshlar ittifoqi bo’limi',
-                        path: '/'
+                        title: 'youth_union_department_section',
+                        path: '/youth_union_department_section'
                     },
                     {
                         id: 10,
-                        title: 'Buxgalteriya bo’limi',
-                        path: '/'
+                        title: 'accounting_section',
+                        path: '/accounting_section'
                     },
                     {
                         id: 11,
-                        title: 'Buyurtmalar portfelini shakllantirish, bitiruvchilarni ishga taqsimlashva monitoring bo’limi',
-                        path: '/'
+                        title: 'monitoring_of_graduates_section',
+                        path: '/monitoring_of_graduates_section'
                     },
                     {
                         id: 12,
-                        title: 'Sanoat iqtisodiyoti bo’limi',
-                        path: '/'
+                        title: 'industrial_economics_section',
+                        path: '/industrial_economics_section'
                     }
                 ]
             },
             {
                 id: 4,
-                title: 'Fakultetlar',
+                title: 'faculties',
                 path: '/'
             },
             {
                 id: 5,
-                title: 'Kafedralar',
+                title: 'chairs',
                 path: '/'
             },
             {
@@ -386,7 +386,7 @@ const menus = [
     },
     {
         id: 8,
-        title: "Yangiliklar",
+        title: "news",
         path: '/news'
     },
 ]
@@ -394,20 +394,20 @@ const menus = [
 
 const paths = [
     {
-        title: "Moliyaviy Faoliyat",
+        title: "financial_activity",
+        path: '/financial_activity'
+    },
+    {
+        title: "electronic_library",
+        path: '/electronic_library'
+    },
+    {
+        title: "preparatory_course",
         path: '/'
     },
     {
-        title: "Elektron Kutubhona",
-        path: '/'
-    },
-    {
-        title: "Tayyorlov kursi",
-        path: '/'
-    },
-    {
-        title: "Hemis",
-        path: '/'
+        title: "hemis",
+        path: '/hemis'
     }
 ]
 

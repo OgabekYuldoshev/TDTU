@@ -29,7 +29,7 @@ const Menu = ({ onOpen = () => null }) => {
     const childMenu = parentMenu?.children?.find(menu => menu.id === selectedChildMenu)
 
     return (
-        <div className='relative'>
+        <div className='relative z-50'>
             <div className='bg-white absolute -bottom-8 w-full text-black py-4 shadow px-4 rounded'>
                 <div className='flex items-center justify-between gap-5 divide-x'>
                     <SearchOutlined className='text-lg cursor-pointer' onClick={() => setSearch(current => !current)} />
