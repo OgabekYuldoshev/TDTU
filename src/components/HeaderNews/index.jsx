@@ -83,13 +83,6 @@ export default function HeaderNews() {
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <div className="range_btn">
-                                        {/*<span className={text}>TEST TEST TEST TEST TEST</span>*/}
-                                        {/*<Input*/}
-                                        {/*    id="exampleRange"*/}
-                                        {/*    name="range"*/}
-                                        {/*    type="range"*/}
-                                        {/*    value={75}*/}
-                                        {/*/>*/}
                                     </div>
                                     <ButtonCom textColor={"text-black"} text={"Batafsil"}/>
                                 </div>
