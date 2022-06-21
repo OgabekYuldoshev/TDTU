@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.responsive {
+    padding: 0 140px;
+}
+
+@media (max-width: 1024px) {
+    .responsive {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 640px) {
+    .responsive {
+        padding: 0 15px;
+    }
+}
