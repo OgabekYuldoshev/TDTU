@@ -70,6 +70,7 @@ const Menu = ({ onOpen = () => null }) => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 10 }}
                             ref={ref}
+                            onMouseLeave={handleClear}
                             className={`duration-300 overflow-hidden bg-white absolute top-10 w-full  shadow`}>
                             <div className='px-4 block relative rounded grid grid-cols-3 gap-10 text-black py-8 px-14'>
                                 <div className='z-20'>
