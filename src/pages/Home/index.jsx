@@ -71,7 +71,7 @@ const Home = () => {
                 </div>
 
                 {/* interaktive xizmatlar */}
-                {/* <InterActive /> */}
+                 <InterActive />
                 {/* foydali havolalar */}
                 <UsifulLinks />
             </div>
