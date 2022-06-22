@@ -3,6 +3,7 @@ import { Napa, PolitexTexture } from '../../assets/svg'
 import Logo from "../../assets/png/logo.png"
 import { Link } from 'react-router-dom'
 import { useTranslation } from "react-i18next"
+
 const Footer = () => {
     const { t } = useTranslation()
     const links = [
@@ -60,9 +61,43 @@ const Footer = () => {
         }
     ]
 
+
+
     return (
         <footer>
-            <div className='bg-primary_green xl:px-[140px] md:px-[60px] sm:px-[30px] px-[15px] text-white relative overflow-hidden'>
+            <div className='bg-primary_lightgray text-white relative overflow-hidden border-b-2 flex items-end divide-x-2'>
+                <div className='group flex items-center justify-center p-2 flex-col bg-primary_green w-1/3 cursor-pointer'>
+                    <span>
+                        Tashrif buyurish
+                    </span>
+                    <div className='group-hover:h-full h-0 transform duration-300 overflow-hidden'>
+                        <div className='px-5 mt-2'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatibus recusandae quisquam corrupti, totam natus quam impedit libero ex officiis architecto repellat iste eum? Possimus sed qui excepturi iure distinctio? Nihil doloribus impedit mollitia. Dolorem harum repudiandae voluptates, non saepe, quod cumque ex, eius ducimus voluptatem est. Harum, aspernatur expedita.
+                        </div>
+                    </div>
+                </div>
+                <div className='group flex items-center justify-center p-2 flex-col bg-primary_green w-1/3 cursor-pointer'>
+                    <span>
+                        Qabul 2022
+                    </span>
+                    <div className='group-hover:h-full h-0 transform duration-300 overflow-hidden'>
+                        <div className='px-5 mt-2'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatibus recusandae quisquam corrupti, totam natus quam impedit libero ex officiis architecto repellat iste eum? Possimus sed qui excepturi iure distinctio? Nihil doloribus impedit mollitia. Dolorem harum repudiandae voluptates, non saepe, quod cumque ex, eius ducimus voluptatem est. Harum, aspernatur expedita.
+                        </div>
+                    </div>
+                </div>
+                <div className='group flex items-center justify-center p-2 flex-col bg-primary_green w-1/3 cursor-pointer'>
+                    <span>
+                        Contact
+                    </span>
+                    <div className='group-hover:h-full h-0 transform duration-300 overflow-hidden'>
+                        <div className='px-5 mt-2'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatibus recusandae quisquam corrupti, totam natus quam impedit libero ex officiis architecto repellat iste eum? Possimus sed qui excepturi iure distinctio? Nihil doloribus impedit mollitia. Dolorem harum repudiandae voluptates, non saepe, quod cumque ex, eius ducimus voluptatem est. Harum, aspernatur expedita.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='bg-primary_green responsive text-white relative overflow-hidden'>
                 <h2 className='md:text-2xl z-20 relative text-center font-bold text-white mt-[60px]'>
                     {t("university_name")}
                 </h2>
