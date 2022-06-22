@@ -6,32 +6,32 @@ const menus = [
             {
                 id: 1,
                 title: 'rector_congratulations',
-                path: '/rector_congratulations'
+                path: '/university/rector_congratulations'
             },
             {
                 id: 2,
                 title: 'requisites',
-                path: '/requisites'
+                path: '/university/requisites'
             },
             {
                 id: 3,
                 title: 'university_regulations',
-                path: '/university_regulations'
+                path: '/university/university_regulations'
             },
             {
                 id: 4,
                 title: 'virtual_reception',
-                path: '/virtual_reception'
+                path: '/university/virtual_reception'
             },
             {
                 id: 5,
                 title: 'regulatory_documents',
-                path: '/regulatory_documents'
+                path: '/university/regulatory_documents'
             },
             {
                 id: 6,
                 title: 'history_of_university',
-                path: '/history_of_university'
+                path: '/university/history_of_university'
             }
         ]
     },
@@ -42,7 +42,7 @@ const menus = [
             {
                 id: 1,
                 title: 'rektorat',
-                path: '/rektorat'
+                path: '/structure/rektorat'
             },
             {
                 id: 2,
@@ -51,27 +51,27 @@ const menus = [
                     {
                         id: 1,
                         title: 'information_center',
-                        path: '/information_center'
+                        path: '/centers/information_center'
                     },
                     {
                         id: 2,
                         title: 'digital_learning_technologies_center',
-                        path: '/digital_learning_technologies_center'
+                        path: '/centers/digital_learning_technologies_center'
                     },
                     {
                         id: 3,
                         title: 'personal_training_center',
-                        path: '/personal_training_center'
+                        path: '/centers/personal_training_center'
                     },
                     {
                         id: 4,
                         title: 'japan_innovation_center',
-                        path: '/japan_innovation_center'
+                        path: '/centers/japan_innovation_center'
                     },
                     {
                         id: 5,
                         title: 'industrial_training_center',
-                        path: '/industrial_training_center'
+                        path: '/centers/industrial_training_center'
                     }
                 ]
             },
@@ -82,57 +82,57 @@ const menus = [
                     {
                         id: 1,
                         title: 'master_system_section',
-                        path: '/master_system'
+                        path: '/sections/master_system'
                     },
                     {
                         id: 3,
                         title: 'researching_system_section',
-                        path: '/researching_system_section'
+                        path: '/sections/researching_system_section'
                     },
                     {
                         id: 4,
                         title: 'teaching_methodology_section',
-                        path: '/teaching_methodology_section'
+                        path: '/sections/teaching_methodology_section'
                     },
                     {
                         id: 5,
                         title: 'inside_monitoring_section',
-                        path: '/inside_monitoring_section'
+                        path: '/sections/inside_monitoring_section'
                     },
                     {
                         id: 6,
                         title: 'science_section',
-                        path: '/science_section'
+                        path: '/sections/science_section'
                     },
                     {
                         id: 7,
                         title: 'gifted_students_section',
-                        path: '/gifted_students_section'
+                        path: '/sections/gifted_students_section'
                     },
                     {
                         id: 8,
                         title: 'human_resources_section',
-                        path: '/human_resources_section'
+                        path: '/sections/human_resources_section'
                     },
                     {
                         id: 9,
                         title: 'youth_union_department_section',
-                        path: '/youth_union_department_section'
+                        path: '/sections/youth_union_department_section'
                     },
                     {
                         id: 10,
                         title: 'accounting_section',
-                        path: '/accounting_section'
+                        path: '/sections/accounting_section'
                     },
                     {
                         id: 11,
                         title: 'monitoring_of_graduates_section',
-                        path: '/monitoring_of_graduates_section'
+                        path: '/sections/monitoring_of_graduates_section'
                     },
                     {
                         id: 12,
                         title: 'industrial_economics_section',
-                        path: '/industrial_economics_section'
+                        path: '/sections/industrial_economics_section'
                     }
                 ]
             },
@@ -148,77 +148,77 @@ const menus = [
             },
             {
                 id: 6,
-                title: 'Filiallar',
+                title: 'branches',
                 children: [
                     {
                         id: 1,
-                        title: 'Islom Karimov nomidagi Toshkent davlat texnika universiteti Olmaliq filiali',
-                        path: '/'
+                        title: 'olmaliq_branch',
+                        path: '/branches/olmaliq_branch'
                     },
                     {
                         id: 2,
-                        title: 'Islom Karimov nomidagi Toshkent davlat texnika universiteti qoqon filiali',
-                        path: '/'
+                        title: 'qoqon_branch',
+                        path: '/branches/qoqon_branch'
                     },
                     {
                         id: 3,
-                        title: 'Islom Karimov nomidagi Toshkent davlat texnika universiteti termiz filiali',
-                        path: '/'
+                        title: 'termiz_branch',
+                        path: '/branches/termiz_branch'
                     }
                 ]
             },
             {
                 id: 7,
-                title: 'TDTU tuzilmasi',
-                path: '/'
+                title: 'tdtu_structure',
+                path: '/tdtu_structure'
             }
         ]
     },
     {
         id: 3,
-        title: "Faoliyat",
+        title: "activity",
         children: [
             {
                 id: 1,
-                title: 'Fan va innovatsiya',
+                title: 'science_and_innovation',
                 children: [
                     {
-                        title: 'Fan',
-                        path: '/'
+                        title: 'science',
+                        path: '/activity/science'
                     },
                     {
-                        title: 'innovatsiya',
-                        path: '/'
+                        title: 'innovation',
+                        path: '/activity/innovation'
                     },
                     {
                         title: 'doktorantura',
-                        path: '/'
+                        path: '/activity/doktorantura'
                     }
                 ]
             },
             {
                 id: 2,
-                title: 'Yoshlar bilan ishlash',
-                path: '/'
+                title: 'working_with_young_people',
+                path: '/activity/working_with_young_people'
             },
             {
                 id: 3,
-                title: 'Madaniy-Ma’rifiy',
-                path: '/'
+                title: 'cultural_and_enlightenment',
+                path: '/activity/cultural_and_enlightenment'
             },
             {
                 id: 4,
-                title: 'Xalqaro aloqalar',
+                title: 'international_relations',
                 children: [
                     {
                         id: 1,
-                        title: 'xalqaro hamkorlik bo’limi',
-                        path: '/'
+                        title: 'department_of_international_cooperation',
+                        path: '/activity/department_of_international_cooperation'
                     },
                     {
                         id: 2,
-                        title: 'creative spark',
-                        path: '/'
+                        title: 'creative_spark',
+                        path: '/activity/creative_spark'
                     },
                     {
                         id: 3,
@@ -226,18 +226,18 @@ const menus = [
                         children: [
                             {
                                 id: 1,
-                                title: 'Mechauz',
-                                path: '/'
+                                title: 'mechauz',
+                                path: '/activity/mechauz'
                             },
                             {
                                 id: 2,
-                                title: 'space.com',
-                                path: '/'
+                                title: 'space_com',
+                                path: '/activity/space_com'
                             },
                             {
                                 id: 3,
                                 title: 'ka107',
-                                path: '/'
+                                path: '/activity/ka107'
                             }
                         ]
                     }
@@ -247,95 +247,95 @@ const menus = [
     },
     {
         id: 4,
-        title: "Talabalar",
+        title: "students",
         children: [
             {
                 id: 1,
-                title: 'Bakalavriat',
-                path: '/'
+                title: 'bachelor',
+                path: '/students/bachelor'
             },
             {
                 id: 2,
-                title: 'Magistratura',
-                path: '/'
+                title: 'magister',
+                path: '/students/magister'
             },
             {
                 id: 3,
-                title: 'Kechki ta’lim',
-                path: '/'
+                title: 'evening_education',
+                path: '/students/evening_education'
             },
             {
                 id: 4,
-                title: 'Sirtqi ta’lim',
-                path: '/'
+                title: 'distance_learning',
+                path: '/students/distance_learning'
             },
             {
                 id: 5,
-                title: 'Bitiruvchilar klubi',
-                path: '/'
+                title: 'alumni_club',
+                path: '/students/alumni_club'
             }
         ]
     },
     {
         id: 5,
-        title: "Ilmiy Faoliyat",
+        title: "scientific_activity",
         children: [
             {
                 id: 1,
-                title: 'Texnika yulduzlari',
-                path: '/'
+                title: 'technology_stars',
+                path: '/scientific_activity/technology_stars'
             },
             {
                 id: 2,
-                title: 'Yosh texnika yulduzlari',
-                path: '/'
+                title: 'young_tech_stars',
+                path: '/scientific_activity/young_tech_stars'
             },
             {
                 id: 3,
-                title: 'Ta’lim tizimida ijtimoiy gumanitar fanlar',
-                path: '/'
+                title: 'social_sciences_and_humanities',
+                path: '/scientific_activity/social_sciences_and_humanities'
             },
             {
                 id: 4,
-                title: 'Mahorat darskari',
-                path: '/'
+                title: 'master_class',
+                path: '/scientific_activity/master_class'
             }
         ]
     },
     {
         id: 6,
-        title: "Abituriyent",
+        title: "applicant",
         children: [
             {
                 id: 1,
-                title: 'Bakalavriat',
-                path: '/'
+                title: 'bachelor',
+                path: '/applicant/bachelor'
             },
             {
                 id: 2,
-                title: 'Magistratura',
-                path: '/'
+                title: 'magister',
+                path: '/applicant/magister'
             },
             {
                 id: 3,
-                title: 'Sirtqi va kechki ta’lim shakillari',
-                path: '/'
+                title: 'parttime_and_evening_education',
+                path: '/applicant/parttime_and_evening_education'
             },
             {
                 id: 4,
-                title: 'Qo’shma ta’lim dasturlari',
-                path: '/'
+                title: 'co_curricular_programs',
+                path: '/applicant/co_curricular_programs'
             },
             {
                 id: 5,
-                title: 'Xorijiy Fuqarolar',
-                path: '/'
+                title: 'foreign_citizenr',
+                path: '/applicant/foreign_citizenr'
             }
         ]
     },
     {
         id: 7,
-        title: "Korrupsiyasiz soha",
+        title: "no_corruption",
         children: [
             {
                 id: 1,
