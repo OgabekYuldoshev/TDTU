@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        height: 'height'
+      },
       colors: {
         primary_green: "#1B6B50",
         primary_green_darken: "#16523D",
