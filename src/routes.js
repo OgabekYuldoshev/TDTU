@@ -1,6 +1,6 @@
 import Home from "./pages/Home"
-import Requisites from "./pages/Requisites"
-
+import Requisites from "./pages/University/Requisites"
+import VirtualReception from "./pages/University/VirtualReception"
 
 const routes = [
     {
@@ -12,6 +12,11 @@ const routes = [
         name: 'Requisites',
         path: '/university/requisites',
         component: Requisites
+    },
+    {
+        name: 'VirtualReception',
+        path: '/university/virtual_reception',
+        component: VirtualReception
     }
 ]
 
