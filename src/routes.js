@@ -1,5 +1,5 @@
 import Home from "./pages/Home"
-import Requisites from "./pages/Requisites"
+
 import RectorCongratulations from "./pages/University/rector_congratulations"
 import UniversityRegulations from "./pages/University/university_regulations"
 import RegulatoryDoc from "./pages/University/regulatory_documents"
