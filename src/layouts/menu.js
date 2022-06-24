@@ -41,8 +41,8 @@ const menus = [
         children: [
             {
                 id: 1,
-                title: 'rektorat',
-                path: '/structure/rektorat'
+                title: 'rectorate',
+                path: '/structure/rectorate'
             },
             {
                 id: 2,
