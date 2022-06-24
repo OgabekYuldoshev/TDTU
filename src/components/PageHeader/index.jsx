@@ -7,7 +7,7 @@ const PageHeader = ({ title, paths }) => {
     const { t } = useTranslation()
 
     return (
-        <div className='responsive flex justify-between items-end w-full border-b mb-8'>
+        <div className='responsive flex justify-between items-end w-full border-b mb-8 mt-5'>
             <h2 className='md:text-2xl text-base mb-0'>{t(title)}</h2>
             <div className='flex items-end gap-1font-semibold'>
                 <Link className='text-black' to="/">
