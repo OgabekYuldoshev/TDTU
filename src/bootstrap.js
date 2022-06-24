@@ -1,5 +1,5 @@
 import config from './config';
-
+import { http } from "./servises"
 import { i18n, storage } from './servises';
 
 i18n.init({
@@ -12,17 +12,11 @@ i18n.init({
     onChange: language => storage.local.set('language', language)
 });
 
-// http.init({
-//   configFn: () => {
-//     const state = store.getState();
-//     const token = state.auth.tokens.accessToken;
-
-//     return {
-//       baseURL: config.api.base_url,
-//       headers: {
-//         ...(token ? { Authorization: `Bearer ${token}` } : {})
-//       }
-//     };
-//   }
-// });
+http.init({
+    configFn: () => {
+        return {
+            baseURL: config.api.base_url,
+        };
+    }
+});
 

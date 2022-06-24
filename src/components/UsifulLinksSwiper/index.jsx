@@ -1,13 +1,30 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { get } from "lodash"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from "swiper"
 import 'swiper/css';
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
-
+import { http } from "../../servises"
 import ServeiceCard from '../ServiceCard';
+import { toast } from 'react-toastify';
 
 const UsifulLinks = () => {
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        const fetch = async () => {
+            await http.request.get("/public/api/usefullinks").then((res => {
+                const resData = get(res, 'data.data')
+                setData(resData)
+            })).catch((error) => {
+                toast.error("Error: " + error)
+                console.log(error)
+            })
+        }
+        fetch()
+    }, [])
+
     return (
         <section className='py-14'>
             <div className='responsive flex justify-between items-end w-full border-b'>
@@ -41,12 +58,13 @@ const UsifulLinks = () => {
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    <SwiperSlide>
-                        <ServeiceCard />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ServeiceCard />
-                    </SwiperSlide>
+                    {
+                        Array.isArray(data) && data.map(item => (
+                            <SwiperSlide key={item?.id}>
+                                <ServeiceCard item={item} />
+                            </SwiperSlide>
+                        ))
+                    }
                 </Swiper>
             </div>
         </section>

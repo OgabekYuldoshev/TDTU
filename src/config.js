@@ -15,7 +15,7 @@ const config = {
     list: ['uz', 'ru', 'en']
   },
   api: {
-    base_url: '',
+    base_url: 'https://politexapi.na4u.ru',
   },
 };
 

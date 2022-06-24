@@ -1,13 +1,17 @@
 import React from 'react'
-import DTM from "../../assets/png/dtm.png"
-const ServeiceCard = () => {
+import { useTranslation } from 'react-i18next'
+import config from "../../config"
+import { get } from "lodash"
+
+const ServeiceCard = ({ item }) => {
+    const { i18n } = useTranslation()
     return (
-        <div className='w-full cursor-pointer bg-white py-5 h-fit shadow rounded-lg hover:shadow-lg duration-300 gap-4 grid grid-cols-1 px-7'>
+        <a href={get(item, 'address')} target="_blank" className='w-full cursor-pointer bg-white py-5 h-fit shadow rounded-lg hover:shadow-lg duration-300 gap-4 grid grid-cols-1 px-7'>
             <div className='flex justify-center'>
-                <img src={DTM} alt="student" />
+                <img src={`${config.api.base_url}/storage/${get(item, 'img')}`} className="w-full h-40 object-cover object-center" alt="student" />
             </div>
-            <h2 className='text-center text-lg font-bold mb-0'>Davtlat test markazi</h2>
-        </div>
+            <h2 className='text-center text-lg font-bold mb-0'>{get(item, `text_${i18n.language}`)}</h2>
+        </a>
     )
 }
 
