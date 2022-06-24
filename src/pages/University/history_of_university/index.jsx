@@ -86,7 +86,7 @@ const HistoryUniversity = () => {
 
     return (
         <div className=''>
-            <HeaderImg text={"Universitet tarixi"}/>
+            <HeaderImg text={"history_of_university"}/>
             <div className='responsive mt-5'>
                 <Tabs defaultActiveKey="1" onChange={onChange}>
                     <TabPane tab={

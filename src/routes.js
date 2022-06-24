@@ -8,6 +8,7 @@ import HistoryUniversity from "./pages/University/history_of_university";
 
 import Requisites from "./pages/University/Requisites"
 import VirtualReception from "./pages/University/VirtualReception"
+import Structure from "./pages/Structure/rectorate";
 
 const routes = [
     {
@@ -15,6 +16,8 @@ const routes = [
         path: '/',
         component: Home
     },
+
+    // UNIVERSITY
     {
         name: 'Requisites',
         path: '/university/requisites',
@@ -44,6 +47,11 @@ const routes = [
         name: 'history_of_university',
         path: '/university/history_of_university',
         component: HistoryUniversity
+    },
+    {
+        name: 'rectorate',
+        path: '/structure/rectorate',
+        component: Structure
     }
 ]
 
