@@ -4,10 +4,10 @@ import LogoGreen from "../../assets/png/logoGreen.png"
 
 const RectorCard = ({ active = false }) => {
     return (
-        <div>
+        <div className='my-12'>
             <div className={`${active && "bg-primary_green"} group hover:bg-primary_green bg-white p-5 rounded-xl shadow-lg relative duration-300`}>
                 <div className={`${active && "border-white"} group-hover:border-white border border-primary_green rounded-xl md:p-10 p-5 grid md:grid-cols-4 items-center justify-between duration-300`}>
-                    <div className='sm:flex hidden col-span-1 relative items-center justify-center'>
+                    <div className='md:flex hidden col-span-1 relative items-center justify-center'>
                         <div className='md:w-[300px] w-[200px] md:h-[350px] h-[250px] absolute p-5 rounded-xl' style={{ background: "url(https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80)", backgroundSize: "cover", backgroundPosition: "center" }}>
                             <div className='border h-full rounded-xl' />
                         </div>
