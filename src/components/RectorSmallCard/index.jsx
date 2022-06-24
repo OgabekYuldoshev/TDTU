@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RectorCard = () => {
+const RectorSmallCard = () => {
     return (
         <div className='my-10'>
             <div className={` bg-white p-5 rounded-xl shadow-lg relative duration-300`}>
@@ -35,4 +35,4 @@ const RectorCard = () => {
     )
 }
 
-export default RectorCard
+export default RectorSmallCard

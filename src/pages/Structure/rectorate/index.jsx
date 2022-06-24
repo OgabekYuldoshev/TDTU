@@ -4,6 +4,7 @@ import UsifulLinks from "../../../components/UsifulLinksSwiper"
 import PageHeader from "../../../components/PageHeader";
 import RectorCard from '../../../components/RectorCard';
 import RectorSmallCard from '../../../components/RectorSmallCard';
+import AbiturentCard from '../../../components/AbiturentCard';
 
 
 export default function Structure() {
@@ -18,7 +19,10 @@ export default function Structure() {
             <div className='responsive'>
                 <RectorCard />
                 <div className='grid grid-cols-2 gap-5'>
-                <RectorSmallCard />
+                    <RectorSmallCard />
+                </div>
+                <div className='grid grid-cols-2 gap-5 mt-10'>
+                    <AbiturentCard />
                 </div>
             </div>
             <UsifulLinks />
