@@ -6,6 +6,8 @@ import RegulatoryDoc from "./pages/University/regulatory_documents"
 import HistoryUniversity from "./pages/University/history_of_university";
 
 
+import Requisites from "./pages/University/Requisites"
+import VirtualReception from "./pages/University/VirtualReception"
 
 const routes = [
     {
@@ -17,6 +19,11 @@ const routes = [
         name: 'Requisites',
         path: '/university/requisites',
         component: Requisites
+    },
+    {
+        name: 'VirtualReception',
+        path: '/university/virtual_reception',
+        component: VirtualReception
     },
     {
         name: 'rector_congratulations',
