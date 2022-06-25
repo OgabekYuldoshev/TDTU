@@ -5,8 +5,10 @@ import UniversityRegulations from "./pages/University/university_regulations"
 import RegulatoryDoc from "./pages/University/regulatory_documents"
 import HistoryUniversity from "./pages/University/history_of_university";
 
-
 import Requisites from "./pages/University/Requisites"
+import News from "./pages/News/List"
+import NewsSingle from "./pages/News/Single"
+
 import VirtualReception from "./pages/University/VirtualReception"
 import Structure from "./pages/Structure/rectorate";
 
@@ -15,6 +17,18 @@ const routes = [
         name: 'Home',
         path: '/',
         component: Home
+    },
+    // NEWS
+
+    {
+        name: 'news',
+        path: '/news',
+        component: News
+    },
+    {
+        name: 'news-single',
+        path: '/news/:id',
+        component: NewsSingle
     },
 
     // UNIVERSITY

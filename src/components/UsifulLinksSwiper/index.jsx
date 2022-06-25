@@ -8,8 +8,10 @@ import "swiper/css/navigation";
 import { http } from "../../servises"
 import ServeiceCard from '../ServiceCard';
 import { toast } from 'react-toastify';
+import { useTranslation } from 'react-i18next';
 
 const UsifulLinks = () => {
+    const { t } = useTranslation()
     const [data, setData] = useState([])
 
     useEffect(() => {
@@ -28,7 +30,7 @@ const UsifulLinks = () => {
     return (
         <section className='py-14'>
             <div className='responsive flex justify-between items-end w-full border-b'>
-                <h2 className='md:text-2xl text-base mb-0'>Foydali Havolalar</h2>
+                <h2 className='md:text-2xl text-base mb-0'>{t("usefull_links")}</h2>
             </div>
             <div className='responsive mt-12'>
                 <Swiper

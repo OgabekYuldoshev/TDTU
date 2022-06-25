@@ -26,8 +26,6 @@ const Footer = () => {
         fetch()
     }, [])
 
-    console.log(socials)
-
     const links = [
         {
             name: t('university'),
