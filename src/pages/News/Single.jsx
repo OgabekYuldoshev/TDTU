@@ -8,25 +8,25 @@ import { useTranslation } from 'react-i18next';
 import config from '../../config';
 import UsifulLinks from '../../components/UsifulLinksSwiper';
 import { useParams } from 'react-router';
+import Spinner from '../../components/Spinner';
 
 const Single = () => {
     const { t, i18n } = useTranslation()
     const params = useParams()
-
     const [data, setData] = useState([])
-    const [meta, setMeta] = useState({
-        totalItems: 0,
-        current: 0
-    })
+    const [loading, setLoading] = useState([])
 
     useEffect(() => {
         if (params.id) {
             const fetch = async () => {
+                setLoading(true)
                 await http.request.get(`/public/api/news/${params.id}`).then((res => {
                     const resData = get(res, 'data.data')
                     setData(resData)
+                    setLoading(false)
                 })).catch((error) => {
                     toast.error("Error: " + error)
+                    setLoading(false)
                     console.log(error)
                 })
             }
@@ -56,6 +56,7 @@ const Single = () => {
                     <img src={config.api.base_url + "/storage/" + get(data, `image_2`)} alt="" />
                 </div>
             </div>
+            {loading && <Spinner />}
             <UsifulLinks />
         </div>
     )
