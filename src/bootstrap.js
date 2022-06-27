@@ -1,6 +1,5 @@
 import config from './config'
-import { http } from "./servises"
-import { i18n, storage } from './servises'
+import { i18n, storage, http } from './servises'
 
 i18n.init({
     languages: config.language.list,

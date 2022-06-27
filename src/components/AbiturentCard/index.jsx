@@ -1,8 +1,9 @@
-import { t } from 'i18next'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Button from "../../components/Button"
 
 const AbiturentCard = () => {
+    const { t } = useTranslation()
     return (
         <div className='my-10'>
             <div className={` bg-white p-5 rounded-xl shadow-lg relative duration-300`}>
