@@ -72,7 +72,7 @@ const Menu = ({ onOpen = () => null }) => {
                             ref={ref}
                             onMouseLeave={handleClear}
                             className={`duration-300 overflow-hidden bg-white absolute top-10 w-full  shadow`}>
-                            <div className='px-4 block relative rounded grid grid-cols-3 gap-10 text-black py-8 px-14'>
+                            <div className='relative rounded grid grid-cols-3 gap-10 text-black py-8 px-14'>
                                 <div className='z-20'>
                                     <h1 className='text-xl font-bold'>{t(parentMenu.title)}</h1>
                                     <p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore deserunt nostrum accusamus aliquam error veritatis ab pariatur aliquid optio blanditiis?</p>

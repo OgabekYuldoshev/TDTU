@@ -4,7 +4,6 @@ import LogoGreen from "../../assets/png/logoGreen.png"
 import { get } from "lodash"
 import config from '../../config'
 import { useTranslation } from 'react-i18next'
-import { t } from 'i18next'
 
 const RectorCard = ({ item, active = false }) => {
     const { i18n, t } = useTranslation()

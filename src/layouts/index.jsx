@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
         <>
             <TopHead />
             <Header />
-            <main className='bg-primary_lightgray m-auto'>
+            <main className='bg-primary_lightgray m-auto overflow-hidden'>
                 {children}
             </main>
             <Footer />

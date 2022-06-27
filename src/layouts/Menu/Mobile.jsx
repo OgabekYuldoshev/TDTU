@@ -25,7 +25,8 @@ const Tab = () => {
         <div ref={ref} className={`${open && "bg-white text-black"} py-5 duration-300 px-[15px] shadow`}>
             <div className='flex justify-between items-center gap-5'>
                 <Link to="/" className='flex items-center gap-5'>
-                    <img className="w-16" src={!open ? Logo : LogoGreen} alt="logo" />
+                    <img className={`${open ? 'hidden' : 'block'} w-16`} src={Logo} alt="logo" />
+                    <img className={`${open ? 'block' : 'hidden'} w-16`} src={LogoGreen} alt="logoGreen" />
                     <h1 className={`${open ? 'text-primary_green' : 'text-white'} max-w-sm`}>{t('university_name')}</h1>
                 </Link>
                 {open ? <CloseOutlined onClick={() => setOpen(false)} className="text-black text-xl" /> :
@@ -45,7 +46,7 @@ const Tab = () => {
                                     <Search onClick={(e) => alert(e)} />
                                     <div className='grid grid-cols-2 gap-3 my-5'>
                                         {
-                                            paths.map(item => <Link key={item.title } className='py-2 px-4 text-white font-semibold bg-primary_green text-center rounded' to={item.path}>{t(item.title)}</Link>)
+                                            paths.map(item => <Link key={item.title} className='py-2 px-4 text-white font-semibold bg-primary_green text-center rounded' to={item.path}>{t(item.title)}</Link>)
                                         }
                                     </div>
                                     {
