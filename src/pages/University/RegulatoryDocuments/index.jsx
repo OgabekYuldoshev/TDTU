@@ -16,7 +16,7 @@ const RegulatoryDoc = () => {
                 }
             ]} />
             <div className='responsive'>
-                <p className={"my-7"}>
+                <p className={"lg:text-xl md:text-base lg:leading-9 leading-6"}>
                     {t("regulatory_documents")}
                 </p>
             </div>

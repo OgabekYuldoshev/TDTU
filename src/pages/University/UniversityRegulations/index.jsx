@@ -11,8 +11,8 @@ const UniversityRegulations = () => {
                     title: 'university_regulations'
                 }
             ]} />
-            <div className='responsive'>
-                <p className={"my-7"}>
+            <div className='responsive mt-10'>
+                <p className={"lg:text-xl md:text-base lg:leading-9 leading-6"}>
                     OLIY TA’LIM MUASSASASINING ASOSIY VAZIFALARI
 
                     TDTUning asosiy vazifalari quyidagilardan iborat:

@@ -1,10 +1,10 @@
 import Home from "./pages/Home"
 
 // University
-import RectorCongratulations from "./pages/University/rector_congratulations"
-import UniversityRegulations from "./pages/University/university_regulations"
-import RegulatoryDoc from "./pages/University/regulatory_documents"
-import HistoryUniversity from "./pages/University/history_of_university"
+import RectorCongratulations from "./pages/University/RectorCongratulations"
+import UniversityRegulations from "./pages/University/UniversityRegulations"
+import RegulatoryDoc from "./pages/University/RegulatoryDocuments"
+import HistoryUniversity from "./pages/University/HistoryOfUniversity"
 import Requisites from "./pages/University/Requisites"
 import VirtualReception from "./pages/University/VirtualReception"
 // News
