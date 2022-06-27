@@ -5,7 +5,7 @@ import config from '../../config'
 
 const CardStudent = ({ item }) => {
     const { i18n } = useTranslation()
-    console.log(item)
+
     return (
         <div className='relative group w-full hover:bg-white p-2 h-fit rounded hover:shadow-lg duration-300'>
             <img width="100%" className='h-[300px] transform group-hover:scale-95 duration-300 object-fit object-cover rounded-lg' src={`${config.api.base_url}/storage/${get(item, 'img')}`} alt="student" />

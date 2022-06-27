@@ -41,8 +41,6 @@ const HistoryUniversity = () => {
                                     }}
                                     spaceBetween={50}
                                     slidesPerView={2}
-                                    onSlideChange={() => console.log('slide change')}
-                                    onSwiper={(swiper) => console.log(swiper)}
                                 >
                                     {
                                         Array(6).fill().map(item => (

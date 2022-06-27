@@ -38,7 +38,6 @@ const VirtualReception = () => {
         validationSchema,
         onSubmit: values => {
             const captcha = captchaRef.current.value;
-            console.log(validateCaptcha(captcha))
             if (validateCaptcha(captcha)) {
                 console.log(values)
             } else {
