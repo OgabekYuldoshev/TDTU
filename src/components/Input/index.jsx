@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Input = ({ invalid = false, label, ...props }) => {
+const Input = ({ invalid = false, label = null, ...props }) => {
     return (
         <div className='w-full block'>
             {!!label && <label className='font-medium'>{label}</label>}

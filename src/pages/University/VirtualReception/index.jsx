@@ -1,60 +1,60 @@
-// import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import PageHeader from '../../../components/PageHeader'
-// import VirtualReceptionSvg from "../../../assets/svg/virtual_reception.svg"
-// import Input from '../../../components/Input'
-// import TextArea from '../../../components/TextArea'
-// import InputMask from '../../../components/InputMask'
-// import { useTranslation } from 'react-i18next'
-// import Uploader from '../../../components/Uploader'
-// import {
-//     loadCaptchaEnginge,
-//     LoadCanvasTemplateNoReload,
-//     validateCaptcha
-// } from "react-simple-captcha"
-// import { useFormik } from 'formik'
-// import { toast } from "react-toastify"
-// import * as Yup from "yup"
+import VirtualReceptionSvg from "../../../assets/svg/virtual_reception.svg"
+import Input from '../../../components/Input'
+import TextArea from '../../../components/TextArea'
+import InputMask from '../../../components/InputMask'
+import { useTranslation } from 'react-i18next'
+import Uploader from '../../../components/Uploader'
+import {
+    loadCaptchaEnginge,
+    LoadCanvasTemplateNoReload,
+    validateCaptcha
+} from "react-simple-captcha"
+import { useFormik } from 'formik'
+import { toast } from "react-toastify"
+import * as Yup from "yup"
 
 const VirtualReception = () => {
-    // const { t } = useTranslation()
-    // const captchaRef = useRef(null)
+    const { t } = useTranslation()
+    const captchaRef = useRef(null)
 
-    // const validationSchema = Yup.object({
-    //     fullname: Yup.string().required(),
-    //     phone: Yup.string().required(),
-    //     title: Yup.string().required(),
-    //     theme: Yup.string().required(),
-    //     file: Yup.mixed().required()
-    // }).shape()
+    const validationSchema = Yup.object({
+        fullname: Yup.string().required(),
+        phone: Yup.string().required(),
+        title: Yup.string().required(),
+        theme: Yup.string().required(),
+        file: Yup.mixed().required()
+    }).shape()
 
-    // const formik = useFormik({
-    //     initialValues: {
-    //         fullname: '',
-    //         phone: '',
-    //         title: '',
-    //         theme: '',
-    //         file: ""
-    //     },
-    //     validationSchema,
-    //     onSubmit: values => {
-    //         const captcha = captchaRef?.current?.value
-    //         if (validateCaptcha(captcha)) {
-    //             console.log(values)
-    //         } else {
-    //             toast.error(t('invalid_captcha_try_again'))
-    //         }
-    //     }
-    // })
+    const formik = useFormik({
+        initialValues: {
+            fullname: '',
+            phone: '',
+            title: '',
+            theme: '',
+            file: ""
+        },
+        validationSchema,
+        onSubmit: values => {
+            const captcha = captchaRef?.current?.value
+            if (validateCaptcha(captcha)) {
+                console.log(values)
+            } else {
+                toast.error(t('invalid_captcha_try_again'))
+            }
+        }
+    })
 
 
-    // useEffect(() => {
-    //     loadCaptchaEnginge(6)
-    // }, [])
+    useEffect(() => {
+        loadCaptchaEnginge(6)
+    }, [])
 
     return (
         <div className='md:pt-14 pb-5'>
             <PageHeader title="virtual_reception" paths={[{ title: "virtual_reception" }]} />
-            {/* <div className='responsive grid md:grid-cols-3 grid-cols-1 py-10 gap-10'>
+            <div className='responsive grid md:grid-cols-3 grid-cols-1 py-10 gap-10'>
                 <div className='md:col-span-2 col-span-1'>
                     <form onSubmit={formik.handleSubmit} className='grid md:grid-cols-1 grid-cols-1 gap-5'>
                         <div>
@@ -93,7 +93,7 @@ const VirtualReception = () => {
                 <div className='md:block hidden'>
                     <img src={VirtualReceptionSvg} alt="VirtualReceptionSvg" />
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }
