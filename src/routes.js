@@ -25,6 +25,8 @@ import MasterSystem from "./pages/Structure/sections/MasterSystem"
 import ResearchingSystemSection from "./pages/Structure/sections/ResearchingSystemSection"
 import Faculties from "./pages/Structure/faculties"
 import Chairs from "./pages/Structure/chairs"
+import Branches from "./pages/Structure/branches";
+import Bachelor from "./pages/students/bachelor";
 
 const routes = [
     {
@@ -134,12 +136,25 @@ const routes = [
         path: '/chairs',
         component: Chairs
     },
+    // branches
+    {
+        name: 'branches',
+        path: '/branches/olmaliq_branch',
+        component: Branches
+    },
 
     // Activity
     {
         name: 'financial_activity',
         path: '/activity/financial_activity',
         component: FinancialActivity
+    },
+
+    // students
+    {
+        name: 'bachelor',
+        path: '/students/bachelor',
+        component: Bachelor
     }
 ]
 
