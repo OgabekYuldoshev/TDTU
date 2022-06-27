@@ -21,6 +21,7 @@ import DigitalLearningTechnologiesCenter from "./pages/Structure/centers/Digital
 import PersonalTrainingCenter from "./pages/Structure/centers/PersonalTrainingCenter";
 import IndustrialTrainingCenter from "./pages/Structure/centers/IndustrialTrainingCenter";
 import JapanInnovationCenter from "./pages/Structure/centers/JapanInnovationCenter";
+import MasterSystem from "./pages/Structure/sections/MasterSystem";
 
 const routes = [
     {
@@ -105,6 +106,13 @@ const routes = [
         name: 'japan_innovation_center',
         path: '/centers/japan_innovation_center',
         component: JapanInnovationCenter
+    },
+
+    //sections
+    {
+        name: 'master_system',
+        path: '/sections/master_system',
+        component: MasterSystem
     },
 
     // Activity

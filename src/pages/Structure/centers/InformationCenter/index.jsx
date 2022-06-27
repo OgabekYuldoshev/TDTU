@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderImg from "../../../../components/HeaderImg"
 import {useTranslation} from "react-i18next"
+import UsifulLinks from "../../../../components/UsifulLinksSwiper"
 
 export default function InformationCenter() {
 
@@ -135,6 +136,7 @@ export default function InformationCenter() {
                     darajasida amalga oshirishdan iborat.
                 </p>
             </div>
+            <UsifulLinks />
         </>
     )
 }
