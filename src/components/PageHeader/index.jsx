@@ -1,4 +1,3 @@
-import { HomeOutlined } from '@ant-design/icons'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
@@ -14,12 +13,12 @@ const PageHeader = ({ title, paths }) => {
                     {t('home')}
                 </Link>
                 {
-                    paths?.map(path => (
-                        <>
+                    Array.isArray(paths) && paths?.map(path => (
+                        <div key={path?.path}>
                             {"/"}{
                                 path?.path ? <Link className='text-black mb-0 pb-0' to={path?.path}>{t(path?.title)}</Link> : <span className='text-black mb-0 pb-0'>{t(path?.title)}</span>
                             }
-                        </>
+                        </div>
                     ))
                 }
             </div>
@@ -27,4 +26,4 @@ const PageHeader = ({ title, paths }) => {
     )
 }
 
-export default PageHeader
+export default React.memo(PageHeader)

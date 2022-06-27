@@ -47,7 +47,7 @@ const Single = () => {
             ]} />
             <div className='responsive'>
                 <img className='w-full rounded-lg mb-5' src={`${config.api.base_url  }/storage/${  get(data, `img`)}`} alt="title-photo" />
-                <p>{Parser(get(data, `text_${i18n.language}`))}</p>
+                <div>{Parser(get(data, `text_${i18n.language}`))}</div>
             </div>
             <div className='mt-10'>
                 <h2 className='border-b responsive md:text-2xl text-base'>{t('photo_plates')}</h2>
