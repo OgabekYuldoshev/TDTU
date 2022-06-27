@@ -1,5 +1,4 @@
-import React from 'react';
-import { Collapse } from 'antd';
+import { Collapse } from 'antd'
 import './index.css'
 
 const Item = ({ header, children, ...props }) => (
@@ -9,6 +8,6 @@ const Item = ({ header, children, ...props }) => (
     >
         {children}
     </Collapse.Panel>
-);
+)
 
-export default Item;
+export default Item

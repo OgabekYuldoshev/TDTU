@@ -1,5 +1,3 @@
-import React from 'react'
-
 const PolitexTexture = () => {
     return (
         <svg width="1920" height="635" viewBox="0 0 1920 635" fill="none" xmlns="http://www.w3.org/2000/svg">

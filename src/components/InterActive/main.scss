@@ -23,13 +23,13 @@
       line-height: 32px;
       color: #37363C;
 
-      & > h5 {
+      &>h5 {
         font-weight: 600;
         font-size: 20px;
         line-height: 25px;
       }
 
-      & > p {
+      &>p {
         margin-top: 8px;
         font-weight: 300;
         font-size: 15px;
@@ -48,10 +48,11 @@
   }
 
   @keyframes air {
-    from {
+    0% {
       transform: rotate(0);
     }
-    to {
+
+    100% {
       transform: rotate(360deg);
     }
   }
@@ -64,9 +65,11 @@
     0% {
       transform: rotate(-5deg);
     }
+
     50% {
       transform: rotate(0deg);
     }
+
     100% {
       transform: rotate(-5deg);
     }
@@ -80,9 +83,11 @@
     0% {
       transform: rotate(5deg)
     }
+
     50% {
       transform: rotate(0deg);
     }
+
     100% {
       transform: rotate(5deg);
     }
@@ -96,6 +101,7 @@
     0% {
       transform: rotate(0deg)
     }
+
     100% {
       transform: rotate(360deg);
     }
@@ -110,6 +116,7 @@
     0% {
       transform: rotate(360deg)
     }
+
     100% {
       transform: rotate(0deg);
     }

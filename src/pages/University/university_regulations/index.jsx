@@ -1,14 +1,14 @@
 import React from 'react'
-import PageHeader from "../../../components/PageHeader";
-import ServiceCard from "../../../components/ServiceCard";
-import UsifulLinks from "../../../components/UsifulLinksSwiper";
+import PageHeader from "../../../components/PageHeader"
+import ServiceCard from "../../../components/ServiceCard"
+import UsifulLinks from "../../../components/UsifulLinksSwiper"
 
 const UniversityRegulations = () => {
     return (
         <div className='md:pt-14 pb-5'>
             <PageHeader title='university_regulations' paths={[
                 {
-                    title: 'university_regulations',
+                    title: 'university_regulations'
                 }
             ]} />
             <div className='responsive'>

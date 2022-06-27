@@ -1,11 +1,11 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectFade, Autoplay } from "swiper"
-import 'swiper/css';
-import "swiper/css/effect-fade";
+import 'swiper/css'
+import "swiper/css/effect-fade"
 
-import Button from '../Button';
-import { Progress } from 'antd';
+import Button from '../Button'
+import { Progress } from 'antd'
 
 const MainSwiper = () => {
     return (
@@ -17,12 +17,10 @@ const MainSwiper = () => {
                     loop={true}
                     autoplay={{
                         delay: 5000,
-                        disableOnInteraction: false,
+                        disableOnInteraction: false
                     }}
                     spaceBetween={50}
                     slidesPerView={1}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide>
                         <div className='grid sm:grid-cols-2 grid-cols-1 gap-10'>

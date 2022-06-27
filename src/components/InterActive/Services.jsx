@@ -1,16 +1,13 @@
-import React from "react"
 import "./main.scss"
-import InterRot from "../../assets/svg/rot.svg"
+import { SettingFilled } from "@ant-design/icons"
 
 export default function Services() {
     return (
-        <div className="service flex flex-col items-center justify-center">
-            <div className='card cursor-pointer flex items-center p-8 bg-white rounded-xl'>
-                <img className='card__img' src={InterRot} alt=""/>
-                <div className='card__text'>
-                    <h5>Korporativ Elektron Pochta</h5>
-                    <p>TDTU Korporativ elektron pochtasi</p>
-                </div>
+        <div className="flex items-center gap-5 w-full bg-white rounded-lg px-5 py-2 shadow-lg">
+            <SettingFilled className="text-3xl" />
+            <div>
+                <h2 className="pb-0 mb-0">Korporativ Elektron Pochta</h2>
+                <p className="pb-0 mb-0">TDTU Korporativ elektron pochtasi</p>
             </div>
         </div>
     )

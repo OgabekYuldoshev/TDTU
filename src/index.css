@@ -6,6 +6,15 @@
     padding: 0 140px;
 }
 
+.zoom {
+    zoom: 1.1;
+}
+
+.grayscale {
+    filter: grayscale(1) contrast(1.5) brightness(1);
+    mix-blend-mode: multiply;
+}
+
 @media screen and (max-width: 1024px) {
     .responsive {
         padding: 0 60px;

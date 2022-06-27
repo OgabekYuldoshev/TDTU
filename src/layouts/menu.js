@@ -197,6 +197,11 @@ const menus = [
                 ]
             },
             {
+                id: 5,
+                title: 'financial_activity',
+                path: '/activity/financial_activity'
+            },
+            {
                 id: 2,
                 title: 'working_with_young_people',
                 path: '/activity/working_with_young_people'
@@ -388,14 +393,14 @@ const menus = [
         id: 8,
         title: "news",
         path: '/news'
-    },
+    }
 ]
 
 
 const paths = [
     {
         title: "financial_activity",
-        path: '/financial_activity'
+        path: '/activity/financial_activity'
     },
     {
         title: "electronic_library",

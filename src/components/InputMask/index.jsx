@@ -1,14 +1,14 @@
 
-import InputMask from 'react-input-mask';
+import InputMaskBase from "react-input-mask"
 
-const Input = ({ invalid = false, label, mask, ...props }) => (
+const InputMask = ({ invalid = false, label = null, mask = null, ...props }) => (
     <div className='w-full block'>
         {!!label && <label className='font-medium'>{label}</label>}
-        <InputMask mask={mask} {...props}>
+        <InputMaskBase mask={mask} {...props}>
             {(inputProps) => <input {...inputProps} className={`${invalid ? "border-red-500" : "border-primary_green"} duration-300 bg-transparent border rounded px-2 py-1  focus:outline-none block w-full`} />}
-        </InputMask>
+        </InputMaskBase>
     </div>
 
-);
+)
 
-export default Input
+export default InputMask

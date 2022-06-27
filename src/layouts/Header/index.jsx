@@ -1,10 +1,9 @@
 import Menu from '../Menu/Menu'
-import React from 'react'
+import {useState} from 'react'
 import DesktopMenu from '../Menu/Desktop'
 import TabMenu from '../Menu/Tab'
 import Mobile from '../Menu/Mobile'
 import { useMediaQuery } from '../../hooks'
-import { useState } from 'react'
 
 const Header = () => {
     const tab = useMediaQuery('(min-width: 768px)')

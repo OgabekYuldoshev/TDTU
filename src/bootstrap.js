@@ -1,6 +1,5 @@
-import config from './config';
-
-import { i18n, storage } from './servises';
+import config from './config'
+import { i18n, storage, http } from './servises'
 
 i18n.init({
     languages: config.language.list,
@@ -10,19 +9,13 @@ i18n.init({
         loadPath: `${config.api.base_url}/v1/translations/{{lng}}`
     },
     onChange: language => storage.local.set('language', language)
-});
+})
 
-// http.init({
-//   configFn: () => {
-//     const state = store.getState();
-//     const token = state.auth.tokens.accessToken;
-
-//     return {
-//       baseURL: config.api.base_url,
-//       headers: {
-//         ...(token ? { Authorization: `Bearer ${token}` } : {})
-//       }
-//     };
-//   }
-// });
+http.init({
+    configFn: () => {
+        return {
+            baseURL: config.api.base_url
+        }
+    }
+})
 
