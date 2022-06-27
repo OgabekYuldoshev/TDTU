@@ -57,8 +57,6 @@ const UsifulLinks = () => {
                     }}
                     spaceBetween={20}
                     slidesPerView={2}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
                 >
                     {
                         Array.isArray(data) && data.map(item => (

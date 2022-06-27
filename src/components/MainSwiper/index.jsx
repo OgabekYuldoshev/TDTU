@@ -21,8 +21,6 @@ const MainSwiper = () => {
                     }}
                     spaceBetween={50}
                     slidesPerView={1}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide>
                         <div className='grid sm:grid-cols-2 grid-cols-1 gap-10'>
