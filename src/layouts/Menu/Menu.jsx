@@ -1,9 +1,7 @@
-import React from 'react'
+import { useState, useRef } from 'react'
 import { AlignRightOutlined, CaretDownOutlined, SearchOutlined, CaretRightOutlined, CloseOutlined } from "@ant-design/icons"
 import LogoGreen from "../../assets/png/logoGreen.png"
-import { useState } from 'react'
 import { useOnClickOutside } from "use-hooks"
-import { useRef } from 'react'
 import { motion, AnimatePresence } from "framer-motion"
 import { menus } from "../menu"
 import { useTranslation } from 'react-i18next'

@@ -1,7 +1,6 @@
 import { BarChartOutlined } from '@ant-design/icons'
-import React from 'react'
 
-const FaculityCard = ({img, icon, title}) => {
+const FaculityCard = () => {
     return (
         <div className='group relative rounded-lg shadow-lg overflow-hidden'>
             <img src="https://images.unsplash.com/photo-1655747341547-92f2a5943157?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80" alt="faculity" className='absolute w-full h-full object-cover object-center z-5 group-hover:scale-105 transform duration-300' />

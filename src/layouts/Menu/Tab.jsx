@@ -1,6 +1,5 @@
 import { AlignRightOutlined, CaretDownOutlined, CaretRightOutlined, CloseOutlined } from '@ant-design/icons'
-import React from 'react'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import Logo from "../../assets/png/logo.png"
 import LogoGreen from "../../assets/png/logoGreen.png"
@@ -9,7 +8,6 @@ import { Link, useNavigate } from "react-router-dom"
 import Search from '../../components/Search'
 import { Item, List } from '../../components/Collapse'
 import { motion, AnimatePresence } from "framer-motion"
-import { useRef } from 'react'
 import { useOnClickOutside } from 'use-hooks'
 
 const Tab = () => {

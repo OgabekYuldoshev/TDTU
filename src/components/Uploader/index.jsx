@@ -1,7 +1,5 @@
 import { CloseOutlined, FileFilled } from '@ant-design/icons'
-import React from 'react'
-import { useRef } from 'react'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 const Uploader = ({ invalid = false, label, placeholder, onChange = () => null, name, ...props }) => {
     const inputRef = useRef(null)

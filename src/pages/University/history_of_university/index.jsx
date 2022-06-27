@@ -1,11 +1,10 @@
-import React from 'react'
+import { useState } from 'react'
 import UsifulLinks from "../../../components/UsifulLinksSwiper"
 import { useTranslation } from "react-i18next"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectFade, Autoplay } from "swiper"
 import HeaderImg from "../../../components/HeaderImg"
 import HistoryCard from '../../../components/HistoryCard'
-import { useState } from 'react'
 
 const HistoryUniversity = () => {
     const { t } = useTranslation()

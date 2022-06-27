@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { get } from "lodash"
 import { http } from '../../servises'
@@ -16,7 +16,7 @@ const Facts = () => {
                 setData(resData)
                 setLoading(false)
             })).catch((error) => {
-                toast.error(`Error: ${  error}`)
+                toast.error(`Error: ${error}`)
                 setLoading(false)
                 console.log(error)
             })

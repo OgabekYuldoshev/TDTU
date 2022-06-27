@@ -2,9 +2,9 @@ import React from 'react'
 import { get } from "lodash"
 import { useTranslation } from 'react-i18next'
 import config from '../../config'
-import { t } from 'i18next'
+
 const RectorSmallCard = ({ item }) => {
-    const { i18n } = useTranslation()
+    const { t, i18n } = useTranslation()
     return (
         <div className='my-10'>
             <div className={` bg-white p-5 rounded-xl shadow-lg relative duration-300`}>

@@ -1,6 +1,5 @@
 import { AlignRightOutlined, CaretDownOutlined, CloseOutlined } from '@ant-design/icons'
-import React from 'react'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import Logo from "../../assets/png/logo.png"
 import LogoGreen from "../../assets/png/logoGreen.png"
@@ -11,7 +10,6 @@ import Search from '../../components/Search'
 import { Item, List } from '../../components/Collapse'
 import { motion, AnimatePresence } from "framer-motion"
 import { useOnClickOutside } from 'use-hooks'
-import { useRef } from 'react'
 
 const Tab = () => {
     const [open, setOpen] = useState(false)

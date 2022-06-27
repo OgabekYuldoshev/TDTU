@@ -5,7 +5,6 @@ import RectorCard from '../../../components/RectorCard'
 import { http } from '../../../servises'
 import { toast } from 'react-toastify'
 import { get } from "lodash"
-import { t } from 'i18next'
 import { useTranslation } from 'react-i18next'
 
 export default function Structure() {
@@ -20,7 +19,7 @@ export default function Structure() {
                 setData(resData)
                 setLoading(false)
             })).catch((error) => {
-                toast.error(`Error: ${  error}`)
+                toast.error(`Error: ${error}`)
                 setLoading(false)
                 console.log(error)
             })
