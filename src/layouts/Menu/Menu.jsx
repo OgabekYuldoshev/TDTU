@@ -1,5 +1,5 @@
 import React from 'react'
-import { AlignRightOutlined, CaretDownOutlined, SearchOutlined, CaretRightOutlined, CloseCircleOutlined, CloseOutlined } from "@ant-design/icons"
+import { AlignRightOutlined, CaretDownOutlined, SearchOutlined, CaretRightOutlined, CloseOutlined } from "@ant-design/icons"
 import LogoGreen from "../../assets/png/logoGreen.png"
 import { useState } from 'react'
 import { useOnClickOutside } from "use-hooks"

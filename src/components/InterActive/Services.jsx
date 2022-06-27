@@ -1,6 +1,5 @@
 import React from "react"
 import "./main.scss"
-import InterRot from "../../assets/svg/rot.svg"
 import { SettingFilled } from "@ant-design/icons"
 
 export default function Services() {

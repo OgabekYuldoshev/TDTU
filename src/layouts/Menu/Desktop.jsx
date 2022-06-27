@@ -39,7 +39,7 @@ const DesktopMenu = ({ menu, onClose = () => null }) => {
                         <ul className='text-base flex gap-5'>
                             {
                                 paths.map(item => (
-                                    <li>
+                                    <li key={item.title}>
                                         <Link className='text-white' to={item.path}>
                                             {t(item.title)}
                                         </Link>
@@ -90,7 +90,7 @@ const DesktopMenu = ({ menu, onClose = () => null }) => {
                                         {
                                             menu?.children?.map(item => !!item?.children ? (
                                                 <List key={item?.title}>
-                                                    <Item key={item?.title} header={
+                                                    <Item header={
                                                         <div className='cursor-pointer flex justify-between items-center w-full'>
                                                             <span>{t(item?.title)}</span>
                                                             <CaretDownOutlined />
@@ -100,7 +100,7 @@ const DesktopMenu = ({ menu, onClose = () => null }) => {
                                                             {
                                                                 item?.children.map(obj => !!obj.children ? (
                                                                     <List key={obj?.title}>
-                                                                        <Item key={obj?.title} header={
+                                                                        <Item header={
                                                                             <div className='cursor-pointer flex justify-between items-center w-full'>
                                                                                 <span>{t(obj?.title)}</span>
                                                                                 <CaretDownOutlined />
