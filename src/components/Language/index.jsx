@@ -1,10 +1,10 @@
 import { TiArrowSortedDown } from "react-icons/ti"
-import { Dropdown, Space } from 'antd';
-import React from 'react';
+import { Dropdown, Space } from 'antd'
+import React from 'react'
 import uz from "../../assets/png/uz.png"
 import ru from "../../assets/png/ru.png"
 import en from "../../assets/png/us.png"
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 
 const Languages = () => {
     const { i18n } = useTranslation()

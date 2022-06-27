@@ -3,10 +3,10 @@ import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.css'
 import { BrowserRouter as Router } from "react-router-dom"
 import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css'
 import Spinner from './components/Spinner'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

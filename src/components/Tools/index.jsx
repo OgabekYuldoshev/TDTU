@@ -1,8 +1,8 @@
 import { IoMdGlasses } from "react-icons/io"
 import { AiOutlineFontSize } from "react-icons/ai"
-import { Dropdown } from 'antd';
-import React, { useEffect, useState } from 'react';
-import { storage } from "../../servises";
+import { Dropdown } from 'antd'
+import React, { useEffect, useState } from 'react'
+import { storage } from "../../servises"
 
 const Tools = () => {
     const [mode, setMode] = useState(false)

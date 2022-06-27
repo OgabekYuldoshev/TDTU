@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from "react-i18next"
 import { BsTelegram, BsInstagram, BsTwitter, BsFacebook } from "react-icons/bs"
 import { FaVk } from "react-icons/fa"
-import { toast } from 'react-toastify';
+import { toast } from 'react-toastify'
 import { http } from "../../servises"
 import { get } from "lodash"
 
@@ -19,7 +19,7 @@ const Footer = () => {
                 const resData = get(res, 'data.data')
                 setSocials(resData)
             })).catch((error) => {
-                toast.error("Error: " + error)
+                toast.error(`Error: ${  error}`)
                 console.log(error)
             })
         }
@@ -80,7 +80,6 @@ const Footer = () => {
             link: '/unversity'
         }
     ]
-
 
 
     return (

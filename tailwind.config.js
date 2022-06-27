@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
@@ -15,11 +15,11 @@ module.exports = {
         primary_lightgray: "#F5F5F7",
         primary_black: '#37363C',
         primary_gray: '#737277'
-      },
+      }
     },
     container: {
-      center: true,
-    },
+      center: true
+    }
   },
-  plugins: [],
+  plugins: []
 }

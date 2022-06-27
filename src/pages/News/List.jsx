@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import PageHeader from "../../components/PageHeader";
-import { http } from '../../servises';
+import PageHeader from "../../components/PageHeader"
+import { http } from '../../servises'
 import { get } from "lodash"
 import { toast } from "react-toastify"
-import NewsCard from '../../components/NewsCard';
-import UsifulLinks from '../../components/UsifulLinksSwiper';
-import Spinner from '../../components/Spinner';
-import Paginate from '../../components/Paginate';
+import NewsCard from '../../components/NewsCard'
+import UsifulLinks from '../../components/UsifulLinksSwiper'
+import Spinner from '../../components/Spinner'
+import Paginate from '../../components/Paginate'
 
 const News = () => {
     const [data, setData] = useState([])
@@ -23,7 +23,7 @@ const News = () => {
                 setData(resData)
                 setLoading(false)
             })).catch((error) => {
-                toast.error("Error: " + error)
+                toast.error(`Error: ${  error}`)
                 setLoading(false)
                 console.log(error)
             })
@@ -35,7 +35,7 @@ const News = () => {
         <div className='py-10'>
             <PageHeader title='news' paths={[
                 {
-                    title: 'news',
+                    title: 'news'
                 }
             ]} />
             <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 responsive'>

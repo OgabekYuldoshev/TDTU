@@ -1,5 +1,5 @@
 
-import InputMask from 'react-input-mask';
+import InputMask from 'react-input-mask'
 
 const Input = ({ invalid = false, label, mask, ...props }) => (
     <div className='w-full block'>
@@ -9,6 +9,6 @@ const Input = ({ invalid = false, label, mask, ...props }) => (
         </InputMask>
     </div>
 
-);
+)
 
 export default Input

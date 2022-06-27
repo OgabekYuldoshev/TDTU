@@ -1,5 +1,5 @@
-import React from 'react';
-import { Collapse } from 'antd';
+import React from 'react'
+import { Collapse } from 'antd'
 
 const List = ({ onChange, children, ...props }) => (
     <Collapse
@@ -11,6 +11,6 @@ const List = ({ onChange, children, ...props }) => (
     >
         {children}
     </Collapse>
-);
+)
 
-export default List;
+export default List

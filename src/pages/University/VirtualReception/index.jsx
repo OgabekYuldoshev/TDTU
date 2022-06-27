@@ -10,14 +10,14 @@ import {
     loadCaptchaEnginge,
     LoadCanvasTemplateNoReload,
     validateCaptcha
-} from "react-simple-captcha";
+} from "react-simple-captcha"
 import { useFormik } from 'formik'
 import { toast } from "react-toastify"
 import * as Yup from "yup"
 
 const VirtualReception = () => {
     const { t } = useTranslation()
-    const captchaRef = useRef(null);
+    const captchaRef = useRef(null)
 
     const validationSchema = Yup.object({
         fullname: Yup.string().required(),
@@ -37,19 +37,19 @@ const VirtualReception = () => {
         },
         validationSchema,
         onSubmit: values => {
-            const captcha = captchaRef.current.value;
+            const captcha = captchaRef.current.value
             if (validateCaptcha(captcha)) {
                 console.log(values)
             } else {
                 toast.error(t('invalid_captcha_try_again'))
             }
-        },
-    });
+        }
+    })
 
 
     useEffect(() => {
-        loadCaptchaEnginge(6);
-    }, []);
+        loadCaptchaEnginge(6)
+    }, [])
 
     return (
         <div className='md:pt-14 pb-5'>

@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { get } from "lodash"
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay } from "swiper"
-import 'swiper/css';
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
+import 'swiper/css'
+import "swiper/css/effect-fade"
+import "swiper/css/navigation"
 import { http } from "../../servises"
-import ServeiceCard from '../ServiceCard';
-import { toast } from 'react-toastify';
-import { useTranslation } from 'react-i18next';
+import ServeiceCard from '../ServiceCard'
+import { toast } from 'react-toastify'
+import { useTranslation } from 'react-i18next'
 
 const UsifulLinks = () => {
     const { t } = useTranslation()
@@ -20,7 +20,7 @@ const UsifulLinks = () => {
                 const resData = get(res, 'data.data')
                 setData(resData)
             })).catch((error) => {
-                toast.error("Error: " + error)
+                toast.error(`Error: ${  error}`)
                 console.log(error)
             })
         }
@@ -37,23 +37,23 @@ const UsifulLinks = () => {
                     breakpoints={{
                         640: {
                             slidesPerView: 2,
-                            spaceBetween: 20,
+                            spaceBetween: 20
                         },
                         768: {
                             slidesPerView: 3,
-                            spaceBetween: 30,
+                            spaceBetween: 30
                         },
                         1024: {
                             slidesPerView: 4,
-                            spaceBetween: 40,
-                        },
+                            spaceBetween: 40
+                        }
                     }}
                     modules={[Navigation, Autoplay]}
                     loop={true}
                     navigation
                     autoplay={{
                         delay: 5000,
-                        disableOnInteraction: false,
+                        disableOnInteraction: false
                     }}
                     spaceBetween={20}
                     slidesPerView={2}

@@ -1,8 +1,8 @@
 import React from 'react'
-import {Swiper, SwiperSlide} from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react'
 import {Pagination, Mousewheel, Autoplay} from "swiper"
-import 'swiper/css';
-import "swiper/css/pagination";
+import 'swiper/css'
+import "swiper/css/pagination"
 import "./main.scss"
 import Interactive from "../../assets/svg/interactive.svg"
 import InterAir from "../../assets/svg/inter-air.svg"
@@ -35,7 +35,7 @@ const InterActive = () => {
                     modules={[Mousewheel, Pagination, Autoplay]}
                     autoplay={{
                         delay: 5000,
-                        disableOnInteraction: false,
+                        disableOnInteraction: false
                     }}
                 >
                     <SwiperSlide className='w-full'>

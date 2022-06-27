@@ -6,7 +6,7 @@ const Requisites = () => {
         <div className='md:pt-14 pb-5'>
             <PageHeader title='requisites' paths={[
                 {
-                    title: 'requisites',
+                    title: 'requisites'
                 }
             ]} />
             <div className='responsive'>

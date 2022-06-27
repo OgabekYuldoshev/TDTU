@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import HeaderImg from "../../../components/HeaderImg"
 import UsifulLinks from "../../../components/UsifulLinksSwiper"
-import RectorCard from '../../../components/RectorCard';
-import { http } from '../../../servises';
-import { toast } from 'react-toastify';
+import RectorCard from '../../../components/RectorCard'
+import { http } from '../../../servises'
+import { toast } from 'react-toastify'
 import { get } from "lodash"
-import { t } from 'i18next';
-import { useTranslation } from 'react-i18next';
+import { t } from 'i18next'
+import { useTranslation } from 'react-i18next'
 
 export default function Structure() {
     const { t } = useTranslation()
@@ -20,7 +20,7 @@ export default function Structure() {
                 setData(resData)
                 setLoading(false)
             })).catch((error) => {
-                toast.error("Error: " + error)
+                toast.error(`Error: ${  error}`)
                 setLoading(false)
                 console.log(error)
             })
@@ -32,7 +32,7 @@ export default function Structure() {
         <>
             <HeaderImg text={"rectorate"} paths={[
                 {
-                    title: 'rectorate',
+                    title: 'rectorate'
                 }
             ]} />
 

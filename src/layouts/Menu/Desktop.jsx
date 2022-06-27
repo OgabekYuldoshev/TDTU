@@ -84,11 +84,10 @@ const DesktopMenu = ({ menu, onClose = () => null }) => {
                                 menus.map(menu => (
                                     <div key={menu.title} className=' min-h-max border-l px-3 flex flex-col gap-5'>
                                         {
-                                            menu.path ? <Link to={menu?.path} className='text-center text-black font-semibold cursor-pointer hover:text-primary_green'>{t(menu.title)}</Link> :
-                                                <span className='text-center text-black font-semibold cursor-pointer hover:text-primary_green'>{t(menu.title)}</span>
+                                            menu.path ? <Link to={menu?.path} className='text-center text-black font-semibold cursor-pointer hover:text-primary_green'>{t(menu.title)}</Link> : <span className='text-center text-black font-semibold cursor-pointer hover:text-primary_green'>{t(menu.title)}</span>
                                         }
                                         {
-                                            menu?.children?.map(item => !!item?.children ? (
+                                            menu?.children?.map(item => (!!item?.children ? (
                                                 <List key={item?.title}>
                                                     <Item header={
                                                         <div className='cursor-pointer flex justify-between items-center w-full'>
@@ -98,7 +97,7 @@ const DesktopMenu = ({ menu, onClose = () => null }) => {
                                                     }>
                                                         <ul className='flex flex-col gap-3 mt-3'>
                                                             {
-                                                                item?.children.map(obj => !!obj.children ? (
+                                                                item?.children.map(obj => (!!obj.children ? (
                                                                     <List key={obj?.title}>
                                                                         <Item header={
                                                                             <div className='cursor-pointer flex justify-between items-center w-full'>
@@ -119,7 +118,7 @@ const DesktopMenu = ({ menu, onClose = () => null }) => {
                                                                     <li key={obj?.title} onClick={() => navigate(obj?.path)} className='flex justify-between items-center cursor-pointer'>
                                                                         <span>{t(obj?.title)}</span>
                                                                     </li>
-                                                                ))
+                                                                )))
                                                             }
                                                         </ul>
                                                     </Item>
@@ -128,7 +127,7 @@ const DesktopMenu = ({ menu, onClose = () => null }) => {
                                                 <li key={item?.title} onClick={() => navigate(item?.path)} className='flex justify-between items-center cursor-pointer'>
                                                     <span>{t(item?.title)}</span>
                                                 </li>
-                                            ))
+                                            )))
                                         }
                                     </div>
 

@@ -19,7 +19,7 @@ const FinancialActivity = () => {
                 setData(resData)
                 setLoading(false)
             })).catch((error) => {
-                toast.error("Error: " + error)
+                toast.error(`Error: ${error}`)
                 setLoading(false)
                 console.log(error)
             })

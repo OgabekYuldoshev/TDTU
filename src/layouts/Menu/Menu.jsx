@@ -23,8 +23,8 @@ const Menu = ({ onOpen = () => null }) => {
     const handleClear = () => {
         setSelectMenu(null)
         setSelectMenuChild(null)
-    };
-    useOnClickOutside(ref, handleClear);
+    }
+    useOnClickOutside(ref, handleClear)
     const parentMenu = menus?.find(menu => menu.id === selectedMenu)
     const childMenu = parentMenu?.children?.find(menu => menu.id === selectedChildMenu)
 
@@ -41,7 +41,7 @@ const Menu = ({ onOpen = () => null }) => {
                         ) : (
                             <ul className='flex justify-between items-center w-full mb-0 pl-4 font-medium '>
                                 {
-                                    menus?.map(menu => !!menu.children ? (
+                                    menus?.map(menu => (!!menu.children ? (
                                         <li key={menu?.title} onClick={() => setSelectMenu(menu.id)} className='cursor-pointer hover:text-primary_green'>
                                             {t(menu?.title)}
                                         </li>
@@ -49,15 +49,13 @@ const Menu = ({ onOpen = () => null }) => {
                                         <li key={menu?.title} onClick={() => navigate(menu?.path)} className='cursor-pointer hover:text-primary_green'>
                                             {t(menu?.title)}
                                         </li>
-                                    ))
+                                    )))
                                 }
                             </ul>
                         )
                     }
                     {
-                        search ?
-                            <CloseOutlined onClick={() => setSearch(false)} className='text-lg pl-4 cursor pointer hover:text-primary_green' />
-                            : <AlignRightOutlined onClick={onOpen} className='text-lg pl-4 cursor pointer hover:text-primary_green' />
+                        search ? <CloseOutlined onClick={() => setSearch(false)} className='text-lg pl-4 cursor pointer hover:text-primary_green' /> : <AlignRightOutlined onClick={onOpen} className='text-lg pl-4 cursor pointer hover:text-primary_green' />
                     }
                 </div>
             </div>
@@ -79,7 +77,7 @@ const Menu = ({ onOpen = () => null }) => {
                                 </div>
                                 <ul className='flex flex-col gap-2 '>
                                     {
-                                        parentMenu.children.map(children => !!children.children ? (
+                                        parentMenu.children.map(children => (!!children.children ? (
                                             <li key={children.title} onClick={() => setSelectMenuChild(children?.id)} className={`${childMenu?.id === children?.id && 'bg-primary_green rounded text-white'} py-2 px-4 border-b border-primary_green hover:bg-primary_green hover:rounded hover:text-white font-me duration-300 cursor-pointer flex justify-between items-center`}>
                                                 <span>{t(children.title)}</span>
                                                 {
@@ -90,12 +88,12 @@ const Menu = ({ onOpen = () => null }) => {
                                             <li key={children.title} onClick={() => navigate(children.path)} className='py-2 px-4 border-b border-primary_green hover:bg-primary_green hover:rounded hover:text-white font-me duration-300 cursor-pointer flex justify-between items-center'>
                                                 <span>{t(children.title)}</span>
                                             </li>
-                                        ))
+                                        )))
                                     }
                                 </ul>
                                 <ul className='flex flex-col gap-2 relative z-20'>
                                     {
-                                        childMenu?.children?.map(children => !!children?.children ? (
+                                        childMenu?.children?.map(children => (!!children?.children ? (
                                             <List key={children?.title}>
                                                 <Item key={children?.title} header={
                                                     <div className='py-2 px-4 border-b border-primary_green hover:bg-primary_green hover:rounded hover:text-white font-me duration-300 cursor-pointer flex justify-between items-center w-full'>
@@ -121,7 +119,7 @@ const Menu = ({ onOpen = () => null }) => {
                                             <li key={children?.title} onClick={() => navigate(children?.path)} className='py-2 px-4 border-b border-primary_green hover:bg-primary_green hover:rounded hover:text-white font-me duration-300 cursor-pointer flex justify-between items-center'>
                                                 <span>{t(children?.title)}</span>
                                             </li>
-                                        ))
+                                        )))
                                     }
                                 </ul>
 

@@ -393,7 +393,7 @@ const menus = [
         id: 8,
         title: "news",
         path: '/news'
-    },
+    }
 ]
 
 

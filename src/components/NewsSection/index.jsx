@@ -22,7 +22,7 @@ const NewsSection = () => {
                 setData(resData)
                 setLoading(false)
             })).catch((error) => {
-                toast.error("Error: " + error)
+                toast.error(`Error: ${  error}`)
                 setLoading(false)
                 console.log(error)
             })
@@ -46,21 +46,21 @@ const NewsSection = () => {
                             breakpoints={{
                                 640: {
                                     slidesPerView: 1,
-                                    spaceBetween: 20,
+                                    spaceBetween: 20
                                 },
                                 768: {
                                     slidesPerView: 2,
-                                    spaceBetween: 30,
+                                    spaceBetween: 30
                                 },
                                 1024: {
                                     slidesPerView: 3,
-                                    spaceBetween: 40,
-                                },
+                                    spaceBetween: 40
+                                }
                             }}
                             loop={true}
                             autoplay={{
                                 delay: 3000,
-                                disableOnInteraction: false,
+                                disableOnInteraction: false
                             }}
                             spaceBetween={50}
                             slidesPerView={1}

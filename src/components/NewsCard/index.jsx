@@ -13,7 +13,7 @@ const NewsCard = ({ item }) => {
     const navigate = useNavigate()
     return (
         <div className='group relative rounded-lg bg-white shadow overflow-hidden'>
-            <img className='group-hover:h-full h-[200px] w-full object-cover object-center duration-300 z-5 absolute top-0 left-0' src={config.api.base_url + "/storage/" + get(item, 'img')} alt="newsImage" />
+            <img className='group-hover:h-full h-[200px] w-full object-cover object-center duration-300 z-5 absolute top-0 left-0' src={`${config.api.base_url  }/storage/${  get(item, 'img')}`} alt="newsImage" />
             <div className='group-hover:h-full group-hover:bg-black h-[200px] absolute top-0 left-0 w-full duration-300 z-10 group-hover:bg-opacity-50'>
                 <div className='relative w-full h-full'>
                     <div className='m-5 flex items-center gap-3 duration-300 absolute top-24 left-0 group-hover:top-0 h-fit'>

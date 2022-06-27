@@ -1,13 +1,13 @@
 import React from 'react'
-import PageHeader from "../../../components/PageHeader";
-import UsifulLinks from "../../../components/UsifulLinksSwiper";
+import PageHeader from "../../../components/PageHeader"
+import UsifulLinks from "../../../components/UsifulLinksSwiper"
 
 const RectorCongratulations = () => {
     return (
         <div className='md:pt-14 pb-5'>
             <PageHeader title='rector_congratulations' paths={[
                 {
-                    title: 'rector_congratulations',
+                    title: 'rector_congratulations'
                 }
             ]} />
             <div className='responsive'>
