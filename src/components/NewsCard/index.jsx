@@ -24,7 +24,9 @@ const NewsCard = ({ item }) => {
             </div>
             <div className='relative z-20 mt-[200px] p-[30px]'>
                 <h2 className='text-base group-hover:text-white duration-300'>{get(item, `title_${i18n.language}`)}</h2>
-                <p className='group-hover:text-white duration-300 h-[150px] overflow-hidden'>{HtmlParser(get(item, `text_${i18n.language}`))}</p>
+                <div className='group-hover:text-white duration-300 h-[150px] overflow-hidden'>
+                    {HtmlParser(get(item, `text_${i18n.language}`))}
+                </div>
                 <div className='flex justify-between'>
                     <span className='group-hover:text-white duration-300'>{moment(get(item, "created_at")).format("LLLL")}</span>
                     <span className='group-hover:block hidden'>

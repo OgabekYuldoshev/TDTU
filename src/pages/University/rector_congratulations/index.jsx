@@ -1,6 +1,5 @@
 import React from 'react'
 import PageHeader from "../../../components/PageHeader";
-import ServiceCard from "../../../components/ServiceCard";
 import UsifulLinks from "../../../components/UsifulLinksSwiper";
 
 const RectorCongratulations = () => {
