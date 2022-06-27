@@ -19,6 +19,10 @@ const VirtualReception = () => {
     const { t } = useTranslation()
     const captchaRef = useRef(null)
 
+    useEffect(() => {
+        loadCaptchaEnginge(6)
+    }, [])
+
     const validationSchema = Yup.object({
         fullname: Yup.string().required(),
         phone: Yup.string().required(),
@@ -45,11 +49,6 @@ const VirtualReception = () => {
             }
         }
     })
-
-
-    useEffect(() => {
-        loadCaptchaEnginge(6)
-    }, [])
 
     return (
         <div className='md:pt-14 pb-5'>
