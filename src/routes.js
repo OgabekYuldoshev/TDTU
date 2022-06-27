@@ -16,12 +16,15 @@ import Structure from "./pages/Structure/rectorate"
 
 // Activity
 import FinancialActivity from "./pages/Activity/FinancialActivity"
-import InformationCenter from "./pages/Structure/centers/InformationCenter";
-import DigitalLearningTechnologiesCenter from "./pages/Structure/centers/DigitalLearningTechnologiesCenter";
-import PersonalTrainingCenter from "./pages/Structure/centers/PersonalTrainingCenter";
-import IndustrialTrainingCenter from "./pages/Structure/centers/IndustrialTrainingCenter";
-import JapanInnovationCenter from "./pages/Structure/centers/JapanInnovationCenter";
-import MasterSystem from "./pages/Structure/sections/MasterSystem";
+import InformationCenter from "./pages/Structure/centers/InformationCenter"
+import DigitalLearningTechnologiesCenter from "./pages/Structure/centers/DigitalLearningTechnologiesCenter"
+import PersonalTrainingCenter from "./pages/Structure/centers/PersonalTrainingCenter"
+import IndustrialTrainingCenter from "./pages/Structure/centers/IndustrialTrainingCenter"
+import JapanInnovationCenter from "./pages/Structure/centers/JapanInnovationCenter"
+import MasterSystem from "./pages/Structure/sections/MasterSystem"
+import ResearchingSystemSection from "./pages/Structure/sections/ResearchingSystemSection"
+import Faculties from "./pages/Structure/faculties"
+import Chairs from "./pages/Structure/chairs"
 
 const routes = [
     {
@@ -113,6 +116,23 @@ const routes = [
         name: 'master_system',
         path: '/sections/master_system',
         component: MasterSystem
+    },
+    {
+        name: 'researching_system_section',
+        path: '/sections/researching_system_section',
+        component: ResearchingSystemSection
+    },
+    // faculties
+    {
+        name: 'faculties',
+        path: '/faculties',
+        component: Faculties
+    },
+    // chairs
+    {
+        name: 'chairs',
+        path: '/chairs',
+        component: Chairs
     },
 
     // Activity

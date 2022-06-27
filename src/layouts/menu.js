@@ -139,12 +139,12 @@ const menus = [
             {
                 id: 4,
                 title: 'faculties',
-                path: '/'
+                path: '/faculties'
             },
             {
                 id: 5,
                 title: 'chairs',
-                path: '/'
+                path: '/chairs'
             },
             {
                 id: 6,
