@@ -5,8 +5,8 @@ import React, { useEffect, useState } from 'react'
 import { storage } from "../../servises"
 
 const Tools = () => {
-    const [mode, setMode] = useState(false)
-    const [zoom, setZoom] = useState(false)
+    const [mode, setMode] = useState(storage.local.get('grayscale') || false)
+    const [zoom, setZoom] = useState(storage.local.get('zoom') || false)
 
     useEffect(() => {
         const body = document.querySelector('body')
