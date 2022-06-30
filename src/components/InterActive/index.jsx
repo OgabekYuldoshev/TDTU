@@ -22,10 +22,11 @@ const InterActive = () => {
                     <Button className="px-2 py-1" title='Barchasini ko’rish' />
                 </div>
             </div>
-            <div className='responsive mt-12 grid md:grid-cols-2 grid-cols-1 md:h-[450px] h-[800px]'>
+            <div className='responsive mt-12 grid md:grid-cols-2 grid-cols-1 md:h-[450px] h-[800px] justify-between gap-10'>
                 <Swiper
+                    className='w-full'
                     direction={"vertical"}
-                    slidesPerView={3}
+                    slidesPerView={5}
                     spaceBetween={30}
                     mousewheel={true}
                     pagination={{
