@@ -1,30 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Napa, PolitexTexture } from '../../assets/svg'
 import Logo from "../../assets/png/logo.png"
 import { Link } from 'react-router-dom'
 import { useTranslation } from "react-i18next"
 import { BsTelegram, BsInstagram, BsTwitter, BsFacebook } from "react-icons/bs"
 import { FaVk } from "react-icons/fa"
-import { toast } from 'react-toastify'
-import { http } from "../../servises"
 import { get } from "lodash"
-
+import useList from "../../modules/hooks/useNetworks"
 const Footer = () => {
-    const { t } = useTranslation()
-    const [socials, setSocials] = useState([])
+    const { items } = useList()
 
-    useEffect(() => {
-        const fetch = async () => {
-            await http.request.get("/public/api/networks").then((res => {
-                const resData = get(res, 'data.data')
-                setSocials(resData)
-            })).catch((error) => {
-                toast.error(`Error: ${  error}`)
-                console.log(error)
-            })
-        }
-        fetch()
-    }, [])
+    const { t } = useTranslation()
 
     const links = [
         {
@@ -33,51 +19,51 @@ const Footer = () => {
         },
         {
             name: t('electron_library'),
-            link: '/unversity'
+            link: '/electron_library'
         },
         {
             name: t('schema'),
-            link: '/unversity'
+            link: '/schema'
         },
         {
             name: t('finansical_activity'),
-            link: '/unversity'
+            link: '/finansical_activity'
         },
         {
             name: t('activity'),
-            link: '/unversity'
+            link: '/activity'
         },
         {
             name: t('grand_projects'),
-            link: '/unversity'
+            link: '/grand_projects'
         },
         {
             name: t('news'),
-            link: '/unversity'
+            link: '/news'
         },
         {
             name: t('elective_course'),
-            link: '/unversity'
+            link: '/elective_course'
         },
         {
             name: t('students'),
-            link: '/unversity'
+            link: '/students'
         },
         {
             name: t('scientific_journal'),
-            link: '/unversity'
+            link: '/scientific_journal'
         },
         {
             name: t('abiturents'),
-            link: '/unversity'
+            link: '/abiturents'
         },
         {
             name: t('corruption_free_sector'),
-            link: '/unversity'
+            link: '/corruption_free_sector'
         },
         {
             name: t('hemis'),
-            link: '/unversity'
+            link: '/hemis'
         }
     ]
 
@@ -124,19 +110,19 @@ const Footer = () => {
                     <div className='hidden md:flex flex-col gap-5 items-center'>
                         <img src={Logo} className="w-[300px]" alt="logo" />
                         <div className='flex items-center justify-center gap-8'>
-                            <a href={get(socials, '[0].telegram')} className='text-white'>
+                            <a href={get(items, 'telegram')} className='text-white'>
                                 <BsTelegram className='text-3xl' />
                             </a>
-                            <a href={get(socials, '[0].instagram')} className='text-white'>
+                            <a href={get(items, 'instagram')} className='text-white'>
                                 <BsInstagram className='text-3xl' />
                             </a>
-                            <a href={get(socials, '[0].twitter')} className='text-white'>
+                            <a href={get(items, 'twitter')} className='text-white'>
                                 <BsTwitter className='text-3xl' />
                             </a>
-                            <a href={get(socials, '[0].facebook')} className='text-white'>
+                            <a href={get(items, 'facebook')} className='text-white'>
                                 <BsFacebook className='text-3xl' />
                             </a>
-                            <a href={get(socials, '[0].vkontakte')} className='text-white'>
+                            <a href={get(items, 'vkontakte')} className='text-white'>
                                 <FaVk className='text-3xl' />
                             </a>
                         </div>
@@ -153,19 +139,19 @@ const Footer = () => {
                 <div className='mb-10 md:hidden block'>
                     <h2 className='text-white text-lg text-center mb-8'>{t('our_in_social_networks')}</h2>
                     <div className='flex items-center justify-center gap-8'>
-                        <a href={get(socials, '[0].telegram')} className='text-white'>
+                        <a href={get(items, 'telegram')} className='text-white'>
                             <BsTelegram className='text-3xl' />
                         </a>
-                        <a href={get(socials, '[0].instagram')} className='text-white'>
+                        <a href={get(items, 'instagram')} className='text-white'>
                             <BsInstagram className='text-3xl' />
                         </a>
-                        <a href={get(socials, '[0].twitter')} className='text-white'>
+                        <a href={get(items, 'twitter')} className='text-white'>
                             <BsTwitter className='text-3xl' />
                         </a>
-                        <a href={get(socials, '[0].facebook')} className='text-white'>
+                        <a href={get(items, 'facebook')} className='text-white'>
                             <BsFacebook className='text-3xl' />
                         </a>
-                        <a href={get(socials, '[0].vkontakte')} className='text-white'>
+                        <a href={get(items, 'vkontakte')} className='text-white'>
                             <FaVk className='text-3xl' />
                         </a>
                     </div>

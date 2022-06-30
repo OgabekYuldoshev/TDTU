@@ -8,6 +8,9 @@ import { BrowserRouter as Router } from "react-router-dom"
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Spinner from './components/Spinner'
+import { QueryClientProvider, QueryClient } from "react-query"
+
+const queryClient = new QueryClient()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -23,9 +26,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         draggable={false}
         pauseOnHover={false}
       />
-      <Router>
-        <App />
-      </Router>
+      <QueryClientProvider client={queryClient}>
+        <Router>
+          <App />
+        </Router>
+      </QueryClientProvider>
     </Suspense>
   </React.StrictMode>
 )

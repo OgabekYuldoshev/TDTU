@@ -23,12 +23,12 @@ const NewsCard = ({ item }) => {
                 </div>
             </div>
             <div className='relative z-20 mt-[200px] p-[30px]'>
-                <h2 className='text-base group-hover:text-white duration-300'>{get(item, `title_${i18n.language}`)}</h2>
+                <h2 className='text-base group-hover:text-white duration-300'>{get(item, `title[${i18n.language}]`)}</h2>
                 <div className='group-hover:text-white duration-300 h-[150px] overflow-hidden'>
-                    {HtmlParser(get(item, `text_${i18n.language}`))}
+                    {HtmlParser(get(item, `content[${i18n.language}]`))}
                 </div>
                 <div className='flex justify-between'>
-                    <span className='group-hover:text-white duration-300'>{moment(get(item, "created_at")).format("LLLL")}</span>
+                    <span className='group-hover:text-white duration-300'>{moment(get(item, "createdAt")).format("LLLL")}</span>
                     <span className='group-hover:block hidden'>
                         <Button onClick={() => navigate(`/news/${get(item, "id")}`)} className="px-2 group-hover:text-white" title="Batafsil" />
                     </span>

@@ -1,33 +1,13 @@
-import React, { useState, useEffect } from 'react'
-import CardStudent from '../CardStudent'
-import { toast } from 'react-toastify'
-import { http } from '../../servises'
-import { get } from "lodash"
+import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper'
 import { useTranslation } from 'react-i18next'
 import RectorSmallCard from '../RectorSmallCard'
+import useList from "../../modules/hooks/useWorkers"
 
 const Workers = () => {
-    const [data, setData] = useState([])
-    const [loading, setLoading] = useState(false)
+    const { items, isLoading } = useList()
     const { t } = useTranslation()
-    useEffect(() => {
-        const fetch = async () => {
-            setLoading(true)
-            await http.request.get("/public/api/workers").then((res => {
-                const resData = get(res, 'data.data')
-                setData(resData)
-                setLoading(false)
-            })).catch((error) => {
-                toast.error(`Error: ${  error}`)
-                setLoading(false)
-                console.log(error)
-            })
-        }
-        fetch()
-    }, [])
-
 
     return (
         <section className='py-14'>
@@ -36,7 +16,7 @@ const Workers = () => {
             </div>
             <div className='responsive mt-5'>
                 {
-                    loading ? <h2>{t('loading')}</h2> : (
+                    isLoading ? <h2>{t('loading')}</h2> : (
                         <Swiper
                             modules={[Autoplay]}
                             breakpoints={{
@@ -62,7 +42,7 @@ const Workers = () => {
                             slidesPerView={1}
                         >
                             {
-                                Array.isArray(data) && data.map(item => (
+                                Array.isArray(items) && items.map(item => (
                                     <SwiperSlide key={item.id}>
                                         <RectorSmallCard item={item} />
                                     </SwiperSlide>
