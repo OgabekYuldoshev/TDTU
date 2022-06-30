@@ -12,12 +12,15 @@ import InterRotMini from "../../assets/svg/rot-mini.svg"
 
 import Button from '../Button'
 import Services from "./Services"
+import { useTranslation } from 'react-i18next'
 
 const InterActive = () => {
+    const { t } = useTranslation()
+    
     return (
         <section className='py-14'>
             <div className='responsive flex justify-between items-end w-full border-b'>
-                <h2 className='md:text-2xl text-base mb-0'>Interaktiv Xizmatlar</h2>
+                <h2 className='md:text-2xl text-base mb-0'>{t('interactive_services')}</h2>
                 <div>
                     <Button className="px-2 py-1" title='Barchasini ko’rish' />
                 </div>
