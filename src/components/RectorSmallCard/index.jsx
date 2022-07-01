@@ -11,10 +11,10 @@ const RectorSmallCard = ({ item }) => {
                 <div className={`rounded-xl items-center justify-between duration-300`}>
                     <img src={`${config.api.base_url}/storage/${get(item, 'img')}`} className='w-[200px] h-[250px] left-0 top-1/2 transform -translate-y-1/2 absolute rounded-xl object-cover object-center lg:block hidden' />
                     <div className={`lg:pl-[200px] flex flex-col items-between duration-300`}>
-                        <div className='font-medium text-base cursor-pointer'>{get(item, `name_${i18n.language}`)}</div>
+                        <div className='font-medium text-base cursor-pointer'>{get(item, `name[${i18n.language}]`)}</div>
                         <div className='flex items-center gap-1 text-base'>
                             <span className='font-medium'>{t("position")}:</span>
-                            <span>{get(item, `degree_${i18n.language}`)}</span>
+                            <span>{get(item, `degree[${i18n.language}]`)}</span>
                         </div>
                         <div className='flex items-center gap-1 text-base'>
                             <span className='font-medium'>{t("phone")}:</span>

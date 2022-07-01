@@ -18,18 +18,18 @@ const RectorCard = ({ item, active = false }) => {
                         </div>
                     </div>
                     <div className={`${active && "text-white"} md:col-span-3 sm:col-span-2 col-span-1 md:pl-[100px] flex flex-col items-between group-hover:text-white duration-300`}>
-                        <div className='font-medium md:text-lg text-base cursor-pointer'>{get(item, `name_${i18n.language}`)}</div>
+                        <div className='font-medium md:text-lg text-base cursor-pointer'>{get(item, `name[${i18n.language}]`)}</div>
                         <div className='flex items-center gap-1  md:text-lg text-base'>
                             <span className='font-medium'>{t('position')}:</span>
-                            <span>{get(item, `position_${i18n.language}`)}</span>
+                            <span>{get(item, `position[${i18n.language}]`)}</span>
                         </div>
                         <div className='flex items-center gap-1  md:text-lg text-base'>
                             <span className='font-medium'>{t('degree')}:</span>
-                            <span>{get(item, `degree_${i18n.language}`)}</span>
+                            <span>{get(item, `degree[${i18n.language}]`)}</span>
                         </div>
                         <div className='flex items-center gap-1  md:text-lg text-base'>
                             <span className='font-medium'>{t('reception_time')}:</span>
-                            <span>{get(item, `time_${i18n.language}`)}</span>
+                            <span>{get(item, `time[${i18n.language}]`)}</span>
                         </div>
                         <div className='flex items-center gap-1  md:text-lg text-base'>
                             <span className='font-medium'>{t('phone')}:</span>
