@@ -30,6 +30,10 @@ import Bachelor from "./pages/students/bachelor"
 import Hymn from "./pages/Emblames/Hymn"
 import Flag from "./pages/Emblames/Flag"
 import CoatOfArms from "./pages/Emblames/CoatOfArms"
+import Doktorantura from "./pages/Activity/ScienceAndInnovation/Doktorantura";
+import Innovation from "./pages/Activity/ScienceAndInnovation/Innovation";
+import Science from "./pages/Activity/ScienceAndInnovation/Science";
+import WorkingWithYoungPeople from "./pages/Activity/WorkingWithYoungPeople";
 
 const routes = [
     {
@@ -151,6 +155,26 @@ const routes = [
         name: 'financial_activity',
         path: '/activity/financial_activity',
         component: FinancialActivity
+    },
+    {
+        name: 'doktorantura',
+        path: '/activity/doktorantura',
+        component: Doktorantura
+    },
+    {
+        name: 'innovation',
+        path: '/activity/innovation',
+        component: Innovation
+    },
+    {
+        name: 'science',
+        path: '/activity/science',
+        component: Science
+    },
+    {
+        name: 'working_with_young_people',
+        path: '/activity/working_with_young_people',
+        component: WorkingWithYoungPeople
     },
 
     // students
