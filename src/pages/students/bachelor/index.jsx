@@ -13,11 +13,9 @@ export default function Bachelor() {
                     title: 'students'
                 }
             ]}/>
-
-            <div className='responsive flex justify-between items-end w-full border-b mt-10'>
-                <h2 className='md:text-2xl text-base mb-0'>{t('bachelor')}</h2>
+            <div className='responsive flex justify-between items-end w-full mt-5 border-b mb-8'>
+                <h2 className='md:text-2xl text-base mb-0'>{t("bachelor")}</h2>
             </div>
-            jmdbfkjadb
         </div>
     )
 }
