@@ -9,8 +9,8 @@ import Tools from '../../components/Tools'
 
 const TopHead = () => {
     return (
-        <div className='bg-primary_green_darken xl:px-[140px] md:px-[60px] sm:px-[30px] px-[15px] text-white py-[12px] flex md:justify-end justify-between items-center md:gap-8 gap-4'>
-            <div className='flex md:hidden items-center md:gap-8 gap-4'>
+        <div className='bg-primary_green_darken xl:px-[140px] md:px-[60px] sm:px-[30px] px-[15px] text-white py-[8px] flex md:justify-end justify-between items-center md:gap-8 gap-4'>
+            <div className='flex md:hidden items-center gap-[20px]'>
                 <div className='flex gap-2 items-center cursor-pointer'>
                     <img src={Gerb} alt="gerb" width="20px" />
                 </div>
@@ -22,19 +22,21 @@ const TopHead = () => {
                 </div>
             </div>
 
-            <div className='flex items-center md:gap-8 gap-4'>
-                <div className='flex gap-2 items-center'>
+            <div className='flex items-center lg:gap-[60px] gap-[40px]'>
+
+                <div className='flex gap-[10px] items-center'>
                     <FaPhone fontSize={20} />
                     <span className='sm:block hidden'>+998 71 246-46-00</span>
                 </div>
-                <div className='flex gap-2 items-center'>
+                <div className='flex gap-[10px] items-center'>
                     <AiOutlineMail fontSize={20} />
                     <span className='sm:block hidden'>tstu_info@tdtu.u</span>
                 </div>
-                <div className='flex gap-2 items-center cursor-pointer'>
-                    <Tools />
-                </div>
-                <div className='hidden md:flex items-center gap-8'>
+
+                <div className='hidden md:flex items-center gap-[20px]'>
+                    <div className='flex gap-2 items-center cursor-pointer'>
+                        <Tools />
+                    </div>
                     <div className='flex gap-2 items-center cursor-pointer'>
                         <img src={Gerb} alt="gerb" width="20px" />
                     </div>
