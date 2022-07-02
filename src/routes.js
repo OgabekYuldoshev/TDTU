@@ -30,10 +30,14 @@ import Bachelor from "./pages/students/bachelor"
 import Hymn from "./pages/Emblames/Hymn"
 import Flag from "./pages/Emblames/Flag"
 import CoatOfArms from "./pages/Emblames/CoatOfArms"
-import Doktorantura from "./pages/Activity/ScienceAndInnovation/Doktorantura";
-import Innovation from "./pages/Activity/ScienceAndInnovation/Innovation";
-import Science from "./pages/Activity/ScienceAndInnovation/Science";
-import WorkingWithYoungPeople from "./pages/Activity/WorkingWithYoungPeople";
+import Doktorantura from "./pages/Activity/ScienceAndInnovation/Doktorantura"
+import Innovation from "./pages/Activity/ScienceAndInnovation/Innovation"
+import Science from "./pages/Activity/ScienceAndInnovation/Science"
+import WorkingWithYoungPeople from "./pages/Activity/WorkingWithYoungPeople"
+import CulturalAndEnlightenment from "./pages/Activity/CulturalAndEnlightenment"
+import DepartmentOfInternationalCooperation
+    from "./pages/Activity/InternationalRelations/DepartmentOfInternationalCooperation"
+import CreativeSpark from "./pages/Activity/InternationalRelations/CreativeSpark"
 
 const routes = [
     {
@@ -175,6 +179,21 @@ const routes = [
         name: 'working_with_young_people',
         path: '/activity/working_with_young_people',
         component: WorkingWithYoungPeople
+    },
+    {
+        name: 'cultural_and_enlightenment',
+        path: '/activity/cultural_and_enlightenment',
+        component: CulturalAndEnlightenment
+    },
+    {
+        name: 'department_of_international_cooperation',
+        path: '/activity/department_of_international_cooperation',
+        component: DepartmentOfInternationalCooperation
+    },
+    {
+        name: 'creative_spark',
+        path: '/activity/creative_spark',
+        component: CreativeSpark
     },
 
     // students
