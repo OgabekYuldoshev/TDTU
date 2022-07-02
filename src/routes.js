@@ -25,8 +25,11 @@ import MasterSystem from "./pages/Structure/sections/MasterSystem"
 import ResearchingSystemSection from "./pages/Structure/sections/ResearchingSystemSection"
 import Faculties from "./pages/Structure/faculties"
 import Chairs from "./pages/Structure/chairs"
-import Branches from "./pages/Structure/branches";
-import Bachelor from "./pages/students/bachelor";
+import Branches from "./pages/Structure/branches"
+import Bachelor from "./pages/students/bachelor"
+import Hymn from "./pages/Emblames/Hymn"
+import Flag from "./pages/Emblames/Flag"
+import CoatOfArms from "./pages/Emblames/CoatOfArms"
 
 const routes = [
     {
@@ -155,6 +158,23 @@ const routes = [
         name: 'bachelor',
         path: '/students/bachelor',
         component: Bachelor
+    },
+
+    // UZB em-blames hymn, flag, coat of arms
+    {
+        name: 'hymn',
+        path: '/em_blames/hymn',
+        component: Hymn
+    },
+    {
+        name: 'flag',
+        path: '/em_blames/flag',
+        component: Flag
+    },
+    {
+        name: 'coat_of_arms',
+        path: '/em_blames/coat_of_arms',
+        component: CoatOfArms
     }
 ]
 
